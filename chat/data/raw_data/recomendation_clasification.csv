@@ -1,0 +1,532 @@
+text,recomen_cat,target
+las mas buscadas,crticica,0.0
+las mas rateadas,crticica,0.0
+mejor rating,crticica,0.0
+mejor critica,crticica,0.0
+mas valoradas,crticica,0.0
+aclamada,crticica,0.0
+buenas criticas,crticica,0.0
+altas calificaciones,crticica,0.0
+expertos,crticica,0.0
+elogios,crticica,0.0
+destacado,crticica,0.0
+especializados,crticica,0.0
+criticos,crticica,0.0
+calidad,crticica,0.0
+reconocimiento,crticica,0.0
+premiado,crticica,0.0
+sobresaliente,crticica,0.0
+alabada,crticica,0.0
+puntuacion,crticica,0.0
+elevada,crticica,0.0
+reseñas,crticica,0.0
+guion,crticica,0.0
+favorables,crticica,0.0
+excelente,crticica,0.0
+pureza,crticica,0.0
+positivo,crticica,0.0
+exito taquilla,pop,1.0
+mucha audiencia,pop,1.0
+rompe records,pop,1.0
+recaudacion,pop,1.0
+gran exitos,pop,1.0
+todo el mundo,pop,1.0
+exitoso en el mundo,pop,1.0
+pop,pop,1.0
+multitudes,pop,1.0
+fenomenos,pop,1.0
+globales,pop,1.0
+millones,pop,1.0
+miles,pop,1.0
+gran publico,pop,1.0
+reonocida,pop,1.0
+enormes,pop,1.0
+mucho dinero,pop,1.0
+muchas vistas,pop,1.0
+destacado,pop,1.0
+no dan abasto,pop,1.0
+sobresaturado,pop,1.0
+mas conocidas,pop,1.0
+muy vista,pop,1.0
+reventar,pop,1.0
+producciones masivas,pop,1.0
+montones,pop,1.0
+recientemente,recientes,2.0
+ultimos dias,recientes,2.0
+recien estrenado,recientes,2.0
+lanzado ultimamente,recientes,2.0
+ultimo estreno,recientes,2.0
+gran estreno,recientes,2.0
+actuales,recientes,2.0
+boca de todos,recientes,2.0
+salas saturadas,recientes,2.0
+carteleras,recientes,2.0
+en cines,recientes,2.0
+muchos cines,recientes,2.0
+es tendencia,recientes,2.0
+mucha gente,recientes,2.0
+redes sociales,recientes,2.0
+debutado,recientes,2.0
+este año,recientes,2.0
+acaba de salir,recientes,2.0
+justo salio,recientes,2.0
+netlfix,recientes,2.0
+hbo max,recientes,2.0
+disney,recientes,2.0
+salio hoy,recientes,2.0
+sale mañana,recientes,2.0
+en la madrugada,recientes,2.0
+aquí no ha salido,recientes,2.0
+direccion,culto,3.0
+cinematografico,culto,3.0
+septimo arte,culto,3.0
+arte,culto,3.0
+cinefilo,culto,3.0
+teatros,culto,3.0
+igual a los libros,culto,3.0
+de culto,culto,3.0
+culto,culto,3.0
+sobresaliente,culto,3.0
+diferente,culto,3.0
+no comparacion,culto,3.0
+no hay igual,culto,3.0
+seguidores devotos,culto,3.0
+clasicos de cine,culto,3.0
+cine,culto,3.0
+obra de arte,culto,3.0
+infravalorado,culto,3.0
+singularidad,culto,3.0
+legendaria,culto,3.0
+buena reputacion,culto,3.0
+muy apasionado,culto,3.0
+underground,culto,3.0
+joya,culto,3.0
+gema,culto,3.0
+subestimada,culto,3.0
+comedias,genero,4.0
+terror,genero,4.0
+suspenos,genero,4.0
+miedo,genero,4.0
+gritos,genero,4.0
+emocion,genero,4.0
+accion,genero,4.0
+romance,genero,4.0
+romatico,genero,4.0
+enamorado,genero,4.0
+drama,genero,4.0
+risas,genero,4.0
+rerir,genero,4.0
+noche oscuridad,genero,4.0
+ciencia,genero,4.0
+ficcion,genero,4.0
+vida real,genero,4.0
+documentales,genero,4.0
+aliens,genero,4.0
+zombies,genero,4.0
+futurista,genero,4.0
+super heroes,genero,4.0
+fuera de la tierra,genero,4.0
+animadas,genero,4.0
+vaqueros,genero,4.0
+aventuras,genero,4.0
+cualquiera,owner,5.0
+la que sea,owner,5.0
+la que quieras,owner,5.0
+tu quieras,owner,5.0
+no me decido,owner,5.0
+como quieras,owner,5.0
+hazlo por mi ,owner,5.0
+da igual cual sea,owner,5.0
+no me importa cual,owner,5.0
+como me digas,owner,5.0
+tu consideracion,owner,5.0
+tus gustos,owner,5.0
+lo que a ti te gusta,owner,5.0
+sorprendeme,owner,5.0
+iluminame,owner,5.0
+una buena,owner,5.0
+una chingona,owner,5.0
+una buenisima,owner,5.0
+como tu veas,owner,5.0
+tu sugiere,owner,5.0
+tu mandas,owner,5.0
+tu decide,owner,5.0
+tu hazlo,owner,5.0
+cualquiera que tu,owner,5.0
+yo no estoy seguro,owner,5.0
+para mi cualquiera,owner,5.0
+similares a este,similitud,6.0
+de mi gusto ,similitud,6.0
+para mi gusto,similitud,6.0
+lo que a me encanta,similitud,6.0
+lo que yo veo ,similitud,6.0
+a mi me gustan,similitud,6.0
+a nosotros nos gusta,similitud,6.0
+que se parezca,similitud,6.0
+que sea igual a ,similitud,6.0
+que sea como ,similitud,6.0
+igualito a,similitud,6.0
+muy parecido a ,similitud,6.0
+que trate lo mismo,similitud,6.0
+sea de lo mismo,similitud,6.0
+identico a,similitud,6.0
+sean iguales,similitud,6.0
+que sea copia ,similitud,6.0
+mismito a ,similitud,6.0
+yo prefiero las,similitud,6.0
+preferiria mis,similitud,6.0
+una para mi ,similitud,6.0
+personalizada,similitud,6.0
+me recomiendas a mi,similitud,6.0
+hecho para mi,similitud,6.0
+son para mi,similitud,6.0
+me la hicieron,similitud,6.0
+¿Quieres ver una película con críticas estelares?,crticica,0.0
+¿Te gustaría ver una película aclamada por los críticos?,crticica,0.0
+¿Estás de ánimo para ver una película que haya recibido elogios de la crítica?,crticica,0.0
+¿Te apetece ver una película que haya sido alabada por su excelencia?,crticica,0.0
+¿Qué opinas de ver una película que ha sido muy bien recibida por los críticos?,crticica,0.0
+¿Te interesa ver una película que haya sido calificada como excelente por los críticos?,crticica,0.0
+¿Te animarías a ver una película con reseñas sobresalientes?,crticica,0.0
+¿Estás interesado en ver una película que haya sido aclamada por su calidad?,crticica,0.0
+¿Te gustaría disfrutar de una película con comentarios positivos de la crítica?,crticica,0.0
+¿Qué te parece ver una película con críticas sobresalientes?,crticica,0.0
+¿Estás de humor para ver una película que haya sido reconocida por su excelencia?,crticica,0.0
+¿Te gustaría ver una película que haya sido elogiada por su calidad excepcional?,crticica,0.0
+¿Te apetece ver una película que haya recibido alabanzas por su excelencia?,crticica,0.0
+¿Quieres ver una película que haya sido muy valorada por los críticos?,crticica,0.0
+¿Estás interesado en ver una película que haya sido aclamada por su brillantez?,crticica,0.0
+¿Te animarías a ver una película que haya sido reconocida por su excelencia artística?,crticica,0.0
+¿Estás de ánimo para ver una película que haya sido alabada por su dirección excepcional?,crticica,0.0
+¿Qué opinas de ver una película que haya sido elogiada por su guion brillante?,crticica,0.0
+¿Te interesa ver una película que haya sido reconocida por su actuación destacada?,crticica,0.0
+¿Te gustaría ver una película que haya sido alabada por su impacto emocional?,crticica,0.0
+¿Estás interesado en ver una película que haya sido aclamada por su cinematografía excepcional?,crticica,0.0
+¿Te apetece ver una película que haya sido muy recomendada por la crítica?,crticica,0.0
+¿Quieres disfrutar de una película que haya sido un éxito entre los cinéfilos?,crticica,0.0
+¿Te gustaría ver una película que haya sido aplaudida por su originalidad?,crticica,0.0
+¿Qué te parece ver una película que haya sido premiada por su excelencia?,crticica,0.0
+¿Te interesa ver una película que haya sido elogiada por su intensidad emocional?,crticica,0.0
+¿Te animarías a ver una película que haya sido alabada por su profundidad temática?,crticica,0.0
+¿Estás de humor para ver una película que haya sido destacada por su innovación?,crticica,0.0
+¿Qué opinas de ver una película que haya sido reconocida por su narrativa excepcional?,crticica,0.0
+¿Te gustaría ver una película que haya sido aclamada por su evolución de personajes?,crticica,0.0
+¿Estás interesado en ver una película que haya sido elogiada por su sutilidad?,crticica,0.0
+¿Te apetece ver una película que haya sido muy bien recibida por su atmósfera?,crticica,0.0
+¿Quieres ver una película que haya sido aplaudida por su dirección de arte?,crticica,0.0
+¿Estás de ánimo para ver una película que haya sido alabada por su edición?,crticica,0.0
+¿Te gustaría disfrutar de una película que haya sido reconocida por su banda sonora?,crticica,0.0
+¿Qué te parece ver una película que haya sido premiada por su fotografía?,crticica,0.0
+¿Te interesa ver una película que haya sido elogiada por su montaje?,crticica,0.0
+¿Te animarías a ver una película que haya sido alabada por su diseño de producción?,crticica,0.0
+¿Estás interesado en ver una película que haya sido aclamada por su sonido?,crticica,0.0
+¿Te apetece ver una película que haya sido muy recomendada por su elenco?,crticica,0.0
+¿Quieres disfrutar de una película que haya sido aplaudida por su dirección?,crticica,0.0
+¿Estás de humor para ver una película que haya sido destacada por su escritura?,crticica,0.0
+¿Te gustaría ver una película que haya sido premiada por su rendimiento global?,crticica,0.0
+¿Qué opinas de ver una película que haya sido reconocida por su enfoque único?,crticica,0.0
+¿Te interesa ver una película que haya sido elogiada por su mensaje poderoso?,crticica,0.0
+¿Te animarías a ver una película que haya sido alabada por su relevancia social?,crticica,0.0
+¿Estás de ánimo para ver una película que haya sido destacada por su autenticidad?,crticica,0.0
+¿Quieres ver una película popular?,pop,1.0
+¿Te gustaría ver una película muy vista?,pop,1.0
+¿Estás de ánimo para ver una película que haya sido un éxito de taquilla?,pop,1.0
+¿Te apetece ver una película que todo el mundo ha estado viendo?,pop,1.0
+¿Qué opinas de ver una película que esté en boca de todos?,pop,1.0
+¿Te interesa ver una película que haya sido muy valorada por el público?,pop,1.0
+¿Te gustaría disfrutar de una película que haya sido un fenómeno de popularidad?,pop,1.0
+¿Te animarías a ver una película que esté en la lista de las más vistas?,pop,1.0
+¿Estás interesado en ver una película que haya sido un éxito en su momento?,pop,1.0
+¿Te apetece ver una película que haya sido muy comentada en las redes sociales?,pop,1.0
+¿Quieres ver una película que haya sido un boom en su lanzamiento?,pop,1.0
+¿Estás de humor para ver una película que haya causado sensación?,pop,1.0
+¿Te gustaría ver una película que haya sido un éxito en taquilla?,pop,1.0
+¿Qué te parece ver una película que haya sido muy valorada por el público?,pop,1.0
+¿Te interesa ver una película que haya sido un fenómeno cultural?,pop,1.0
+¿Te animarías a ver una película que haya sido muy vista en su estreno?,pop,1.0
+¿Estás interesado en ver una película que haya sido un hito en la industria del cine?,pop,1.0
+¿Te apetece ver una película que haya sido un éxito en críticas y audiencia?,pop,1.0
+¿Quieres disfrutar de una película que haya sido muy recomendada por amigos?,pop,1.0
+¿Te gustaría ver una película que haya generado mucho debate en su momento?,pop,1.0
+¿Qué opinas de ver una película que haya sido un fenómeno mediático?,pop,1.0
+¿Estás de ánimo para ver una película que haya sido un éxito de público?,pop,1.0
+¿Te gustaría ver una película que haya sido un fenómeno en ventas de entradas?,pop,1.0
+¿Te animarías a ver una película que haya sido muy vista en plataformas de streaming?,pop,1.0
+¿Estás interesado en ver una película que haya sido un fenómeno en festivales de cine?,pop,1.0
+¿Te apetece ver una película que haya sido un éxito de crítica y público?,pop,1.0
+¿Qué te parece ver una película que haya sido un fenómeno de audiencia?,pop,1.0
+¿Te interesa ver una película que haya sido un hito en la historia del cine?,pop,1.0
+¿Te animarías a ver una película que haya sido un éxito en premiaciones?,pop,1.0
+¿Estás interesado en ver una película que haya marcado una generación?,pop,1.0
+¿Te gustaría ver una película que haya sido un fenómeno en las redes sociales?,pop,1.0
+¿Qué opinas de ver una película que haya sido un éxito internacional?,pop,1.0
+¿Te apetece ver una película que haya sido un boom en su estreno?,pop,1.0
+¿Quieres disfrutar de una película que haya sido un fenómeno de taquilla?,pop,1.0
+¿Te gustaría ver una película que haya sido un éxito entre el público joven?,pop,1.0
+¿Qué te parece ver una película que haya sido un fenómeno de crítica?,pop,1.0
+¿Te interesa ver una película que haya sido un hito en la industria cinematográfica?,pop,1.0
+¿Te animarías a ver una película que haya sido un éxito en ventas de DVD/Blu-ray?,pop,1.0
+¿Estás interesado en ver una película que haya sido un fenómeno en la cultura pop?,pop,1.0
+¿Te apetece ver una película que haya sido un éxito en audiencia de televisión?,pop,1.0
+¿Qué opinas de ver una película que haya sido un fenómeno entre los cinéfilos?,pop,1.0
+¿Te gustaría ver una película que haya sido un éxito en críticas y público?,pop,1.0
+¿Estás de humor para ver una película que haya sido un fenómeno entre los fanáticos?,pop,1.0
+¿Te gustaría ver una película que haya sido un éxito en su estreno mundial?,pop,1.0
+¿Qué opinas de ver una película que haya sido un hito en el cine independiente?,pop,1.0
+¿Te interesa ver una película que haya sido un fenómeno entre los críticos?,pop,1.0
+¿Te animarías a ver una película que haya sido un éxito en audiencia de streaming?,pop,1.0
+¿Estás interesado en ver una película que haya sido un fenómeno entre los espectadores?,pop,1.0
+¿Te apetece ver una película que haya sido un boom en su lanzamiento?,pop,1.0
+¿Quieres disfrutar de una película que haya sido un éxito en las encuestas de audiencia?,pop,1.0
+¿Quieres ver una película reciente?,recientes,2.0
+¿Te gustaría ver una película que esté en tendencia?,recientes,2.0
+¿Estás de ánimo para ver una película que acaba de salir?,recientes,2.0
+¿Te apetece ver una película que sea de estreno?,recientes,2.0
+¿Qué opinas de ver una película que esté en la cartelera?,recientes,2.0
+¿Te interesa ver una película que esté generando buzz?,recientes,2.0
+¿Te animarías a ver una película que sea nueva en el cine?,recientes,2.0
+¿Estás interesado en ver una película que sea fresca?,recientes,2.0
+¿Te gustaría disfrutar de una película que esté causando sensación?,recientes,2.0
+¿Qué te parece ver una película que sea del momento?,recientes,2.0
+¿Estás de humor para ver una película que esté en boca de todos?,recientes,2.0
+¿Te gustaría ver una película que se esté comentando mucho?,recientes,2.0
+¿Te apetece ver una película que sea tendencia en redes sociales?,recientes,2.0
+¿Quieres ver una película que esté rompiendo récords de taquilla?,recientes,2.0
+¿Estás interesado en ver una película que esté siendo muy recomendada?,recientes,2.0
+¿Te animarías a ver una película que sea muy anticipada?,recientes,2.0
+¿Estás de ánimo para ver una película que sea la sensación del momento?,recientes,2.0
+¿Qué opinas de ver una película que sea el tema de conversación?,recientes,2.0
+¿Te interesa ver una película que esté siendo muy promocionada?,recientes,2.0
+¿Te gustaría ver una película que esté siendo muy vista en streaming?,recientes,2.0
+¿Te apetece ver una película que sea la novedad en el cine?,recientes,2.0
+¿Quieres disfrutar de una película que sea la favorita del momento?,recientes,2.0
+¿Estás de humor para ver una película que esté en el top de las listas?,recientes,2.0
+¿Te gustaría ver una película que esté siendo muy elogiada por la crítica?,recientes,2.0
+¿Qué te parece ver una película que esté generando mucho hype?,recientes,2.0
+¿Te interesa ver una película que esté siendo muy comentada en los medios?,recientes,2.0
+¿Te animarías a ver una película que esté en la cima de las recomendaciones?,recientes,2.0
+¿Estás interesado en ver una película que esté recibiendo muchos premios?,recientes,2.0
+¿Estás de ánimo para ver una película que esté siendo muy vista en festivales?,recientes,2.0
+¿Te gustaría ver una película que esté en la cresta de la ola?,recientes,2.0
+¿Qué opinas de ver una película que esté siendo muy aclamada por el público?,recientes,2.0
+¿Te interesa ver una película que esté rompiendo récords de audiencia?,recientes,2.0
+¿Te animarías a ver una película que esté siendo muy buscada en línea?,recientes,2.0
+¿Estás de humor para ver una película que sea tendencia en plataformas de streaming?,recientes,2.0
+¿Te gustaría ver una película que esté en la lista de las más vistas?,recientes,2.0
+¿Qué te parece ver una película que esté siendo muy elogiada por los espectadores?,recientes,2.0
+¿Te interesa ver una película que esté recibiendo muchas críticas positivas?,recientes,2.0
+¿Te animarías a ver una película que esté en el centro de la conversación?,recientes,2.0
+¿Estás interesado en ver una película que esté siendo muy comentada en los foros?,recientes,2.0
+¿Estás de ánimo para ver una película que esté siendo muy compartida en redes sociales?,recientes,2.0
+¿Te gustaría ver una película que esté generando mucho entusiasmo?,recientes,2.0
+¿Qué opinas de ver una película que esté siendo muy recomendada por amigos?,recientes,2.0
+¿Te interesa ver una película que esté siendo muy buscada en los motores de búsqueda?,recientes,2.0
+¿Te animarías a ver una película que esté causando un gran impacto?,recientes,2.0
+¿Estás de humor para ver una película que esté rompiendo paradigmas?,recientes,2.0
+¿Te gustaría ver una película que esté marcando tendencia en el cine actual?,recientes,2.0
+"¿Qué te parece ver una película que esté en Netflix, Hbo, Max, Disney?",recientes,2.0
+¿Podríamos disfrutar de una película de culto esta noche?,culto,3.0
+¿Qué te parece ver una película sofisticada esta vez?,culto,3.0
+"Estoy de ánimo para una película que desafíe mi intelecto, ¿alguna recomendación?",culto,3.0
+¿Qué tal si nos sumergimos en una obra maestra del cine?,culto,3.0
+"¿Podríamos ver algo fuera de lo común, algo de culto, quizás?",culto,3.0
+"Estoy buscando algo más que una simple película, algo más... cinéfilo.",culto,3.0
+¿Nos aventuramos en el mundo del cine de autor esta noche?,culto,3.0
+¿Qué opinas de sumergirnos en una película de culto?,culto,3.0
+¿Cómo te sentirías acerca de ver una película clásica y sofisticada?,culto,3.0
+"Estoy buscando una experiencia cinematográfica que despierte mi curiosidad, ¿alguna sugerencia?",culto,3.0
+¿Qué te parece explorar una película que sea considerada una joya del cine?,culto,3.0
+¿Podríamos ver una película que realmente nos haga reflexionar?,culto,3.0
+"Estoy anhelando una película que desafíe mis expectativas, algo de culto, quizás.",culto,3.0
+"¿Nos sumergimos en una película que sea más que entretenimiento, una película con alma?",culto,3.0
+¿Qué opinas de disfrutar una película que sea una oda al cine?,culto,3.0
+"Estoy buscando una película que hable más allá de la pantalla, algo sofisticado.",culto,3.0
+¿Qué tal si nos deleitamos con una película que nos haga pensar?,culto,3.0
+¿Nos aventuramos en el terreno del cine de autor?,culto,3.0
+Estoy de humor para una película que sea una experiencia cinematográfica única.,culto,3.0
+¿Qué te parece sumergirnos en una película que sea considerada una obra maestra?,culto,3.0
+¿Podríamos ver una película que sea una verdadera joya del cine?,culto,3.0
+"Estoy buscando una película que nos transporte a otro nivel, algo de culto, quizás.",culto,3.0
+¿Nos sumergimos en el universo de una película que desafíe las convenciones?,culto,3.0
+¿Qué opinas de disfrutar una película que sea una auténtica obra de arte?,culto,3.0
+"Estoy buscando una película que nos haga cuestionar la realidad, algo sofisticado.",culto,3.0
+¿Qué tal si nos deleitamos con una película que nos haga reflexionar?,culto,3.0
+¿Nos aventuramos en una película que sea una experiencia fuera de lo común?,culto,3.0
+"Estoy de humor para una película que sea más que entretenimiento, una película con alma.",culto,3.0
+¿Qué te parece sumergirnos en una película que sea una verdadera oda al cine?,culto,3.0
+¿Podríamos ver una película que trascienda las barreras del cine convencional?,culto,3.0
+"Estoy buscando una película que nos haga sentir y pensar, algo de culto, quizás.",culto,3.0
+¿Nos sumergimos en una historia cinematográfica que sea un verdadero tesoro?,culto,3.0
+¿Qué opinas de disfrutar una película que sea un verdadero manjar para los cinéfilos?,culto,3.0
+"Estoy buscando una película que desafíe nuestros sentidos, algo sofisticado.",culto,3.0
+¿Qué tal si nos deleitamos con una película que nos haga replantear nuestra percepción del mundo?,culto,3.0
+¿Nos aventuramos en una película que sea una experiencia cinematográfica inolvidable?,culto,3.0
+Estoy de humor para una película que sea una verdadera obra maestra del cine.,culto,3.0
+¿Qué te parece sumergirnos en una película que sea una joya oculta del séptimo arte?,culto,3.0
+¿Podríamos ver una película que sea una verdadera pieza de arte cinematográfico?,culto,3.0
+"Estoy buscando una película que nos transporte a otro tiempo y lugar, algo de culto, quizás.",culto,3.0
+¿Nos sumergimos en una película que desafíe las normas establecidas del cine?,culto,3.0
+¿Qué opinas de disfrutar una película que sea una verdadera celebración del cine?,culto,3.0
+"Estoy buscando una película que nos haga pensar y sentir en igual medida, algo sofisticado.",culto,3.0
+¿Qué tal si nos deleitamos con una película que sea una auténtica joya cinematográfica?,culto,3.0
+¿Nos aventuramos en una película que sea una experiencia cinematográfica única e irrepetible?,culto,3.0
+Estoy de humor para una película que sea una verdadera obra de arte del séptimo arte.,culto,3.0
+¿Qué te parece sumergirnos en una película que sea una experiencia cinematográfica sin igual?,culto,3.0
+¿Podríamos ver una película que nos haga reflexionar sobre la condición humana?,culto,3.0
+"Estoy buscando una película que nos transporte a un mundo nuevo y emocionante, algo de culto, quizás.",culto,3.0
+¿Nos sumergimos en una película que nos haga cuestionar nuestras propias creencias?,culto,3.0
+¿Qué opinas de disfrutar una película que sea una auténtica maravilla del cine?,culto,3.0
+"Estoy buscando una película que nos haga ver el mundo desde una perspectiva diferente, algo sofisticado.",culto,3.0
+¿Qué tal si nos deleitamos con una película que sea una verdadera obra maestra del cine moderno?,culto,3.0
+¿Te gustaría ver una película de ciencia ficción?,genero,4.0
+"Estoy pensando en ver una serie de comedia, ¿qué opinas?",genero,4.0
+¿Qué te parece si vemos un documental interesante?,genero,4.0
+"Estoy de ánimo para ver una película de acción, ¿te animas?",genero,4.0
+¿Qué tal si nos sumergimos en una serie de misterio?,genero,4.0
+¿Te apetece ver un thriller psicológico esta noche?,genero,4.0
+"Estoy buscando algo de anime para ver, ¿alguna recomendación?",genero,4.0
+¿Nos ponemos al día con la última temporada de nuestra serie favorita?,genero,4.0
+¿Qué opinas de ver un clásico del cine esta vez?,genero,4.0
+"Estoy de humor para ver una película de terror, ¿te atreves?",genero,4.0
+¿Te gustaría ver un drama con una historia conmovedora?,genero,4.0
+"Estoy pensando en ver una película de fantasía épica, ¿qué dices?",genero,4.0
+¿Qué te parece si nos relajamos viendo una serie de humor negro?,genero,4.0
+"Estoy de ánimo para ver un documental sobre viajes, ¿te interesa?",genero,4.0
+¿Nos aventuramos en una serie de ciencia ficción?,genero,4.0
+¿Te apetece ver una película de animación japonesa esta noche?,genero,4.0
+"Estoy buscando algo de suspense, ¿qué tal una película de intriga?",genero,4.0
+¿Qué opinas de ver una serie de superhéroes esta vez?,genero,4.0
+"Estoy de humor para ver una película de aventuras, ¿te animas?",genero,4.0
+¿Te gustaría ver un drama romántico con una buena historia?,genero,4.0
+"Estoy pensando en ver una serie de crimen y detectives, ¿qué opinas?",genero,4.0
+¿Qué te parece si nos sumergimos en una película de fantasmas?,genero,4.0
+"Estoy de ánimo para ver un thriller político, ¿te parece?",genero,4.0
+¿Te apetece ver una serie de época con ambientación histórica?,genero,4.0
+"Estoy buscando algo de comedia romántica, ¿alguna recomendación?",genero,4.0
+¿Nos ponemos al día con una serie de suspense y acción?,genero,4.0
+¿Qué opinas de ver una película de terror psicológico esta noche?,genero,4.0
+"Estoy de humor para ver un documental sobre naturaleza, ¿te interesa?",genero,4.0
+¿Te gustaría ver una serie de fantasía con mundos imaginarios?,genero,4.0
+"Estoy pensando en ver una película de guerra, ¿qué dices?",genero,4.0
+¿Qué te parece si nos relajamos viendo una serie de drama familiar?,genero,4.0
+"Estoy de ánimo para ver un thriller psicológico, ¿te animas?",genero,4.0
+¿Te apetece ver una película de animación para todas las edades?,genero,4.0
+"Estoy buscando algo de suspenso, ¿qué tal una película de intriga?",genero,4.0
+¿Nos aventuramos en una serie de ciencia ficción?,genero,4.0
+¿Te gustaría ver una película de anime con acción y aventuras?,genero,4.0
+"Estoy pensando en ver una serie de comedia satírica, ¿qué opinas?",genero,4.0
+¿Qué te parece si nos sumergimos en una película de fantasía oscura?,genero,4.0
+"Estoy de ánimo para ver un thriller psicológico, ¿te parece?",genero,4.0
+¿Te apetece ver una serie de época con ambientación histórica?,genero,4.0
+"Estoy buscando algo de comedia romántica, ¿alguna recomendación?",genero,4.0
+¿Nos ponemos al día con una serie de suspense y acción?,genero,4.0
+¿Qué opinas de ver una película de terror psicológico esta noche?,genero,4.0
+"Estoy de humor para ver un documental sobre naturaleza, ¿te interesa?",genero,4.0
+¿Te gustaría ver una serie de fantasía con mundos imaginarios?,genero,4.0
+"Estoy pensando en ver una película de guerra, ¿qué dices?",genero,4.0
+¿Qué te parece si nos relajamos viendo una serie de drama familiar?,genero,4.0
+"Estoy de ánimo para ver un thriller psicológico, ¿te animas?",genero,4.0
+¿Te apetece ver una película de animación para todas las edades?,genero,4.0
+¿Qué te gustaría ver hoy? ¡Me encantaría ver algo que realmente te emocione!,owner,5.0
+"Estoy abierto a cualquier sugerencia, ¿hay algo en particular que te apetezca ver?",owner,5.0
+"Sé que tienes un buen gusto en películas/series, ¿qué te parece si elijes algo para ver?",owner,5.0
+"Estoy indeciso/a sobre qué ver, pero sé que confío en tus elecciones. ¿Qué prefieres?",owner,5.0
+"Estoy buscando algo para ver, pero me gustaría que fuera algo que te encantara. ¿Algún favorito en mente?",owner,5.0
+¿Te gustaría elegir algo para ver esta noche? Estoy seguro/a de que encontrarás algo genial.,owner,5.0
+"Estoy en el estado de ánimo para ver algo, pero realmente quiero ver algo que disfrutes. ¿Algún género en mente?",owner,5.0
+¿Qué te parece si nos dejamos llevar por tus gustos y elegimos algo que realmente te haga feliz?,owner,5.0
+"Estoy dispuesto/a a ver lo que sea, siempre y cuando sea algo que te guste. ¿Algún título que quieras ver?",owner,5.0
+¿Cuál es esa película o serie que has estado ansioso/a por ver? Podríamos verla juntos.,owner,5.0
+Sé que tienes un excelente criterio para elegir películas/series. ¿Te importaría elegir algo para ver esta vez?,owner,5.0
+Estoy completamente abierto/a a tus sugerencias. ¿Qué te gustaría ver en esta ocasión?,owner,5.0
+Estoy buscando inspiración para una buena película/serie. ¿Qué recomendarías ver?,owner,5.0
+Estoy en busca de algo que realmente te divierta. ¿Qué te parece si nos decides qué ver?,owner,5.0
+¿Qué te parece si te dejo elegir qué ver esta vez? ¡Confío en tus elecciones!,owner,5.0
+Sé que siempre tienes excelentes sugerencias. ¿Qué te gustaría ver hoy?,owner,5.0
+¿Tienes alguna película/serie favorita que aún no hayamos visto juntos? Podríamos verla ahora.,owner,5.0
+¿Cuál es esa película/serie que siempre te emociona ver? ¡Podríamos disfrutarla juntos esta noche!,owner,5.0
+"Estoy listo/a para ver lo que sea, siempre y cuando sea algo que realmente te guste. ¿Qué tienes en mente?",owner,5.0
+¿Te gustaría elegir qué ver esta vez? ¡Me encantaría ver algo que realmente te entusiasme!,owner,5.0
+Estoy deseando ver algo que realmente te haga feliz. ¿Tienes alguna preferencia en mente?,owner,5.0
+¿Qué te parece si esta vez decides tú qué ver? Estoy seguro/a de que harás una excelente elección.,owner,5.0
+Sé que siempre tienes excelentes recomendaciones. ¿Qué nos sugieres ver esta noche?,owner,5.0
+Estoy abierto/a a cualquier sugerencia. ¿Qué película/serie te gustaría ver ahora?,owner,5.0
+¿Cuál es esa película/serie que siempre te hace sentir bien? ¡Podríamos verla juntos!,owner,5.0
+Estoy deseando ver algo que te guste de verdad. ¿Qué te apetece ver esta vez?,owner,5.0
+¿Qué te parece si nos dejas elegir algo que sabemos que te encantará? ¡Queremos ver algo que te haga feliz!,owner,5.0
+Estoy buscando algo que realmente te divierta. ¿Qué te parece si nos decides qué ver?,owner,5.0
+¿Tienes alguna película/serie en mente que siempre te emocione? ¡Podríamos verla juntos ahora mismo!,owner,5.0
+"Estoy dispuesto/a a ver lo que sea, siempre y cuando sea algo que realmente te guste. ¿Qué te apetece ver hoy?",owner,5.0
+¿Te gustaría elegir qué ver esta vez? ¡Me encantaría ver algo que realmente te entusiasme!,owner,5.0
+Estoy deseando ver algo que realmente te haga feliz. ¿Qué tienes en mente?,owner,5.0
+¿Qué te parece si esta vez decides tú qué ver? Estoy seguro/a de que harás una excelente elección.,owner,5.0
+Sé que siempre tienes excelentes recomendaciones. ¿Qué nos sugieres ver esta noche?,owner,5.0
+Estoy abierto/a a cualquier sugerencia. ¿Qué película/serie te gustaría ver ahora?,owner,5.0
+¿Cuál es esa película/serie que siempre te hace sentir bien? ¡Podríamos verla juntos!,owner,5.0
+Estoy deseando ver algo que te guste de verdad. ¿Qué te apetece ver esta vez?,owner,5.0
+¿Qué te parece si nos dejas elegir algo que sabemos que te encantará? ¡Queremos ver algo que te haga feliz!,owner,5.0
+Estoy buscando algo que realmente te divierta. ¿Qué te parece si nos decides qué ver?,owner,5.0
+¿Tienes alguna película/serie en mente que siempre te emocione? ¡Podríamos verla juntos ahora mismo!,owner,5.0
+"Estoy dispuesto/a a ver lo que sea, siempre y cuando sea algo que realmente te guste. ¿Qué te apetece ver hoy?",owner,5.0
+¿Te gustaría elegir qué ver esta vez? ¡Me encantaría ver algo que realmente te entusiasme!,owner,5.0
+Estoy deseando ver algo que realmente te haga feliz. ¿Qué tienes en mente?,owner,5.0
+¿Qué te parece si esta vez decides tú qué ver? Estoy seguro/a de que harás una excelente elección.,owner,5.0
+Sé que siempre tienes excelentes recomendaciones. ¿Qué nos sugieres ver esta noche?,owner,5.0
+Estoy abierto/a a cualquier sugerencia. ¿Qué película/serie te gustaría ver ahora?,owner,5.0
+¿Cuál es esa película/serie que siempre te hace sentir bien? ¡Podríamos verla juntos!,owner,5.0
+Estoy deseando ver algo que te guste de verdad. ¿Qué te apetece ver esta vez?,owner,5.0
+¿Qué te parece si nos dejas elegir algo que sabemos que te encantará? ¡Queremos ver algo que te haga feliz!,owner,5.0
+Estoy buscando algo que realmente te divierta. ¿Qué te parece si nos decides qué ver?,owner,5.0
+¿Tienes alguna película/serie en mente que siempre te emocione? ¡Podríamos verla juntos ahora mismo!,owner,5.0
+¿Podrías recomendarme algo similar a la última película que vi?,similitud,6.0
+"Estoy buscando algo en la misma línea que lo que vi la semana pasada, ¿alguna sugerencia?",similitud,6.0
+"Me encantaría ver algo parecido a una de mis películas favoritas, ¿puedes sugerirme algo?",similitud,6.0
+¿Tienes alguna recomendación que se parezca a las películas que he estado viendo recientemente?,similitud,6.0
+¿Qué películas similares a mis favoritas podrías recomendarme hoy?,similitud,6.0
+"Estoy interesado/a en encontrar películas que se asemejen a mis preferidas, ¿puedes ayudarme?",similitud,6.0
+"Me gustaría descubrir películas que sigan la misma línea que mis últimas elecciones, ¿tienes alguna?",similitud,6.0
+¿Puedes sugerirme películas que tengan un estilo similar a lo que he estado viendo?,similitud,6.0
+"Estoy buscando películas que se ajusten a mis gustos recientes, ¿alguna recomendación?",similitud,6.0
+¿Qué películas podrías sugerirme basadas en mis preferencias anteriores?,similitud,6.0
+"Me gustaría ver algo que tenga la misma vibra que mis últimas elecciones, ¿qué tienes para mí?",similitud,6.0
+¿Podrías recomendarme películas que se relacionen con mis intereses previos?,similitud,6.0
+"Estoy buscando algo que esté en línea con mis gustos cinematográficos anteriores, ¿puedes ayudarme?",similitud,6.0
+¿Tienes alguna sugerencia que se ajuste a mi historial de películas?,similitud,6.0
+¿Qué películas recomendarías basándote en mis preferencias pasadas?,similitud,6.0
+"Estoy interesado/a en ver películas que sean similares a las que he disfrutado antes, ¿tienes alguna sugerencia?",similitud,6.0
+"Me gustaría ver películas que sigan la misma línea que mis últimas elecciones, ¿puedes ayudarme?",similitud,6.0
+¿Podrías recomendarme algo que esté en sintonía con mis últimas preferencias?,similitud,6.0
+"Estoy buscando películas que compartan características con las que he disfrutado previamente, ¿alguna sugerencia?",similitud,6.0
+¿Qué películas sugerirías que sean similares a mis favoritas?,similitud,6.0
+"Me encantaría encontrar películas que se alineen con mis gustos recientes, ¿puedes ayudarme a encontrar algunas?",similitud,6.0
+¿Puedes sugerirme películas que tengan un estilo similar a lo que he estado viendo?,similitud,6.0
+"Estoy interesado/a en ver películas que estén en la misma línea que mis últimas elecciones, ¿tienes alguna recomendación?",similitud,6.0
+¿Qué películas podrías sugerirme basadas en mis preferencias anteriores?,similitud,6.0
+"Estoy buscando algo que esté en línea con mis gustos cinematográficos anteriores, ¿puedes ayudarme?",similitud,6.0
+¿Tienes alguna sugerencia que se ajuste a mi historial de películas?,similitud,6.0
+¿Qué películas recomendarías basándote en mis preferencias pasadas?,similitud,6.0
+"Estoy interesado/a en ver películas que sean similares a las que he disfrutado antes, ¿tienes alguna sugerencia?",similitud,6.0
+"Me gustaría ver películas que sigan la misma línea que mis últimas elecciones, ¿puedes ayudarme?",similitud,6.0
+¿Podrías recomendarme algo que esté en sintonía con mis últimas preferencias?,similitud,6.0
+"Estoy buscando películas que compartan características con las que he disfrutado previamente, ¿alguna sugerencia?",similitud,6.0
+¿Qué películas sugerirías que sean similares a mis favoritas?,similitud,6.0
+"Me encantaría encontrar películas que se alineen con mis gustos recientes, ¿puedes ayudarme a encontrar algunas?",similitud,6.0
+¿Puedes sugerirme películas que tengan un estilo similar a lo que he estado viendo?,similitud,6.0
+"Estoy interesado/a en ver películas que estén en la misma línea que mis últimas elecciones, ¿tienes alguna recomendación?",similitud,6.0
+¿Qué películas podrías sugerirme basadas en mis preferencias anteriores?,similitud,6.0
+"Estoy buscando algo que esté en línea con mis gustos cinematográficos anteriores, ¿puedes ayudarme?",similitud,6.0
+¿Tienes alguna sugerencia que se ajuste a mi historial de películas?,similitud,6.0
+¿Qué películas recomendarías basándote en mis preferencias pasadas?,similitud,6.0
+"Estoy interesado/a en ver películas que sean similares a las que he disfrutado antes, ¿tienes alguna sugerencia?",similitud,6.0
+"Me gustaría ver películas que sigan la misma línea que mis últimas elecciones, ¿puedes ayudarme?",similitud,6.0
+¿Podrías recomendarme algo que esté en sintonía con mis últimas preferencias?,similitud,6.0
+"Estoy buscando películas que compartan características con las que he disfrutado previamente, ¿alguna sugerencia?",similitud,6.0
+¿Qué películas sugerirías que sean similares a mis favoritas?,similitud,6.0
+"Me encantaría encontrar películas que se alineen con mis gustos recientes, ¿puedes ayudarme a encontrar algunas?",similitud,6.0
+¿Puedes sugerirme películas que tengan un estilo similar a lo que he estado viendo?,similitud,6.0
+"Estoy interesado/a en ver películas que estén en la misma línea que mis últimas elecciones, ¿tienes alguna recomendación?",similitud,6.0
+¿Qué películas podrías sugerirme basadas en mis preferencias anteriores?,similitud,6.0
+"Estoy buscando algo que esté en línea con mis gustos cinematográficos anteriores, ¿puedes ayudarme?",similitud,6.0
+¿Tienes alguna sugerencia que se ajuste a mi historial de películas?,similitud,6.0
+¿Qué películas recomendarías basándote en mis preferencias pasadas?,similitud,6.0
+"Estoy interesado/a en ver películas que sean similares a las que he disfrutado antes, ¿tienes alguna sugerencia?",similitud,6.0
