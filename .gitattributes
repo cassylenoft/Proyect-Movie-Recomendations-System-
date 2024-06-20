@@ -1,0 +1,3 @@
+chat/data/proccesed_data/chat_texts.csv !text !filter !merge !diff
+*.csv !text !filter !merge !diff
+*.pkl !text !filter !merge !diff
