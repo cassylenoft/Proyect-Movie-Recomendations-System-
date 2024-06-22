@@ -1,3 +1,4 @@
 #ignorar dataframes o archivos de mas de 100 mB
 movies.csv
 similarity.pkl
+recomendation_model/data/
