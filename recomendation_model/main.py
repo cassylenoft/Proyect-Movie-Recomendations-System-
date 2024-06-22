@@ -27,9 +27,8 @@ def run():
     movie_selected = input(instr+'please type title of the movie you rather: ')
     
     movies_recomended = get_recomendation(title=movie_selected, show_count=3)
-    print(random_color+str(movies_recomended.iloc[0]))
-    print(random_color+str(movies_recomended.iloc[1]))
-    print(random_color+str(movies_recomended.iloc[2]))
+   
+    print(random_color+str(movies_recomended))
 
 
 
@@ -50,26 +49,26 @@ def get_random_movie(category: str):
     if category in ['old','recent']:
         if category == 'old':
             random_movies = df[df[category] == 1].sample(n=3)
-            return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+            return random_movies[['title','type','cast','genres_reduction','description']]
         else:
             random_movies = df[df[category] == 0].sample(n=3)
-            return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+            return random_movies[['title','type','cast','genres_reduction','description']]
 
     elif category in ['short','long']:
         if category == 'short':
             random_movies = df[df[category] == 1].sample(n=3)
-            return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+            return random_movies[['title','type','cast','genres_reduction','description']]
         else:
             random_movies = df[df[category] == 0].sample(n=3)
-            return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+            return random_movies[['title','type','cast','genres_reduction','description']]
 
     elif category in ['local','foregin']:
         if category == 'foregin':
             random_movies = df[df[category] == 1].sample(n=3)
-            return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+            return random_movies[['title','type','cast','genres_reduction','description']]
         else:
             random_movies = df[df[category] == 0].sample(n=3)
-            return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+            return random_movies[['title','type','cast','genres_reduction','description']]
 
     elif category in  ['action',
        'anime', 'classic', 'comedy', 'documental', 'drama', 'family',
@@ -81,7 +80,7 @@ def get_random_movie(category: str):
        'sports', 'suspense', 'short', 'movie']:
             if category == name:
                 random_movies = df[df[category] == 1].sample(n=3)
-        return pd.DataFrame(random_movies[['title','type','cast','genres_reduction','description']])
+        return random_movies[['title','type','cast','genres_reduction','description']]
     else:
         print('sorry category not avaliable')
 
