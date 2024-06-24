@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Procesamiento de Texto</title>
+</head>
+<body>
+    <h1>Ingrese un texto</h1>
+    <form action="/procesar" method="post">
+        <input type="text" name="texto" placeholder="Ingrese texto aquí" required>
+        <button type="submit">Procesar</button>
+    </form>
+    <h2>Resultado:</h2>
+    <p>{{resultado}}</p>
+</body>
+</html>

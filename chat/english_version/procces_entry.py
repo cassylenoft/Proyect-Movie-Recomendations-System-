@@ -1,4 +1,4 @@
-from load_objects import vectorizer, modelo_prediction, encoder, df
+from .load_objects import vectorizer, modelo_prediction, encoder, df #note if you want to run this script mainly please delete dot rigth before .load_objects, then put it back for running web 
 #[['title','type','cast','genres_reduction','description']]
 import re
 def get_prediction(text):

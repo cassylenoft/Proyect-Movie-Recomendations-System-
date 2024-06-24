@@ -15,11 +15,12 @@ def run():
 
         if entry.lower == 'exit':
             break
-        category = get_prediction(entry)
-        print(bot+'okay showing stuff for you choice: {}'.format(category))
-        randoms = show_random_movies(category=category)
-        print(system+str(randoms))
-        
+        else:
+            category = get_prediction(entry)
+            print(bot+'okay showing stuff for you choice: {}'.format(category))
+            randoms = show_random_movies(category=category)
+            print(system+str(randoms))
+            
 
         
 if __name__ == "__main__":

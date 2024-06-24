@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Text Input Example</title>
+</head>
+<body>
+    <h2>Ingresa que es lo que necesitas ver</h2>
+    <form action='/chat' method="post">
+        <input type="text" name='texto'>
+        <input type="submit" value="Enviar">
+        
+    </form>
+</html> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Welcome to movies |</title>
+    
+
+    <style>
+        body {
+            background-color: #060404; /* Color de fondo del cuerpo */
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 100vh; /* Alto del viewport */
+            margin: 0; /* Eliminar margen predeterminado */
+            font-family: Arial, sans-serif; /* Tipo de fuente */
+        }
+
+        .form-container {
+            background-color: #333; /* Color de fondo oscuro */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 8px; /* Borde redondeado */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 300px; /* Ancho del contenedor del formulario */
+        }
+
+        .form-container h1 {
+            color: #fff; /* Color de texto blanco */
+            text-align: center; /* Centrar texto */
+            margin-bottom: 20px; /* Margen inferior */
+        }
+
+        .form-container input[type="text"], .form-container input[type="submit"] {
+            width: 100%; /* Ancho completo del campo de texto y botón */
+            padding: 10px; /* Espaciado interno */
+            margin-bottom: 10px; /* Margen inferior */
+            border: none; /* Sin borde */
+            border-radius: 4px; /* Borde redondeado */
+            font-size: 16px; /* Tamaño de fuente */
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50; /* Color de fondo del botón */
+            color: white; /* Color de texto del botón */
+            cursor: pointer; /* Cambiar cursor al pasar por encima */
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049; /* Color de fondo al pasar por encima */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 style="color:aqua">Welcome im chatbot!<br>
+                                       write som youd like to watch...
+        </h1>
+        <form action='/chat' method="post">
+            <input type="text" name="texto" placeholder="Ingrese aquí...">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

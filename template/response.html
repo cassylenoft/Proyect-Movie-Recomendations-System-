@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Recommendations</title>
+  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 400px;
+            background-color: #484343;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(70, 69, 69, 0.1);
+            margin-top: 20px; /* Espacio superior */
+        }
+        .container h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 16px;
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+        .container a {
+            color: #4CAF50;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px; /* Espacio superior */
+        }
+        .container a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: yellow;">Randoom movies founded!</h1>
+        <p style="color: yellow;">Category selected: {{ respuesta}}</p>
+        <p style="color:aqua">Bot: Please pick a movie if you liked it and i will recommen som other similar!</p>
+        <a href="/">Volver al inicio</a>
+    </div>
+</body>
+</html>
