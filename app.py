@@ -12,15 +12,19 @@ def get_text():
     # user_ip = request.cookies.get('user_ip')
     # return render_template('chat.html',user_ip = user_ip)
     texto = request.form.get('texto','')
-    respuesta = get_bot_response()
-    return render_template('response.html', respuesta=respuesta)
+    category,f1 = get_bot_response()
+    respuesta = {'categoria': category,
+                'movie1':f1,
+            }
+    return render_template('response.html', **respuesta)
     #return 'el texto ingresado es: {}; la respuesta del bote es {}'.format(texto,respuesta)
 
 def get_bot_response():
     texto = request.form.get('texto','')
     category = procces_entry.get_prediction(texto)
-    procces_entry.show_random_movies(category)
-    return category 
+    f1 = procces_entry.show_random_movies(category)
+
+    return category, f1
 
     
 # def index():

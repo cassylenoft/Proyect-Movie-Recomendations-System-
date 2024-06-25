@@ -1,6 +1,7 @@
 from .load_objects import vectorizer, modelo_prediction, encoder, df #note if you want to run this script mainly please delete dot rigth before .load_objects, then put it back for running web 
 #[['title','type','cast','genres_reduction','description']]
 import re
+print(df.columns)
 def get_prediction(text):
     matrix = vectorizer.transform([text]).toarray()
     prediction = modelo_prediction.predict(matrix.reshape(1,-1))
@@ -45,7 +46,7 @@ def show_random_movies(category):
        'sports', 'suspense', 'short', 'movie']:
             if category == name:
                 random_movies = df[df[category] == 1].sample(n=3)
-        return random_movies[['title','genres_reduction']]
+        return random_movies[['title','genres_reduction','release_year','description']].iloc[0,:], random_movies[['title','genres_reduction','release_year','description']].iloc[1,:],random_movies[['title','genres_reduction','release_year','description']].iloc[2,:],
     else:
         print('sorry category not avaliable')
 
