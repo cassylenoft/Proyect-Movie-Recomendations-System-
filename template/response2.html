@@ -1,18 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Text Input Example</title>
-</head>
-<body>
-    <h2>Ingresa que es lo que necesitas ver</h2>
-    <form action='/chat' method="post">
-        <input type="text" name='texto'>
-        <input type="submit" value="Enviar">
-        
-    </form>
-</html> -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,7 +23,9 @@
             padding: 20px; /* Espaciado interno */
             border-radius: 8px; /* Borde redondeado */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            width: 300px; /* Ancho del contenedor del formulario */
+            width: 500px; /* Ancho del contenedor del formulario */
+            margin-top: -400px;
+            left: 500px;
         }
 
         .form-container h1 {
@@ -58,7 +45,7 @@
 
         .form-container input[type="submit"] {
             background-color: #4CAF50; /* Color de fondo del botón */
-            color: white; /* Color de texto del botón */
+            color: rgb(235, 221, 221); /* Color de texto del botón */
             cursor: pointer; /* Cambiar cursor al pasar por encima */
         }
 
@@ -82,7 +69,13 @@
         border-color: #007bff;
         box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
     }
-   
+    .father{
+        width: 300px;
+        height: 100px;
+        position: relative;
+        background-color: #45a049;
+        bottom: 1100px;
+    }
     </style>
 </head>
 <body>
@@ -91,12 +84,16 @@
         </h1>
         <form action='/chat' method="post">
             <input type="text" name="texto" placeholder="i want a love movie...">
-            <div style="color: aquamarine;" class="input-like"  readonly> <label for="input-like" >bot: {{ initial_bot_ms }}</label>
+            <div style="color: aquamarine;" class="input-like"  readonly> <label for="input-like" >bot: category selected -> {{ categoria }}</label>
             </div>
             
             <input type="submit" value="send to bot">
         </form>
     </div>
-    
+    <div class="father">
+        <div class="image_box">
+
+        </div>
+    </div>
 </body>
 </html>

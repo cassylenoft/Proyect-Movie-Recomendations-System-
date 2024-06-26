@@ -12,7 +12,7 @@ def get_prediction(text):
     return category
 
 def show_random_movies(category):
-    if category in ['old','recent']:
+    if category in ['old']:
         if category == 'old':
             random_movies = df[df[category] == 1].sample(n=3)
             return random_movies[['title','genres_reduction']]

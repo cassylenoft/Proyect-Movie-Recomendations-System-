@@ -5,7 +5,8 @@ app = Flask(__name__, template_folder='./template')
 
 @app.route('/')
 def hello():
-    return render_template('chatgpt.html')
+    initial_bot_ms = 'write whatever\nyou want to watch'
+    return render_template('chatgpt.html',initial_bot_ms=initial_bot_ms)
 
 @app.route('/chat',methods=['GET','POST'])
 def get_text():
@@ -16,7 +17,7 @@ def get_text():
     respuesta = {'categoria': category,
                 'movie1':f1,
             }
-    return render_template('response.html', **respuesta)
+    return render_template('response2.html', **respuesta)
     #return 'el texto ingresado es: {}; la respuesta del bote es {}'.format(texto,respuesta)
 
 def get_bot_response():
