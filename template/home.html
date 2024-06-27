@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="/css/style_response.css" />
+  </head>
+
+ <body>
+   <div class='left' >
+      <div class="form-container">
+          <h1 >
+            You can chat with chatbot!
+          </h1>
+          <form action='/chat' method="post">
+            <input type="text" name="texto" placeholder="i want a love movie...">
+            <div  class="input-like"  readonly> <label for="input-like" >bot: category selected -> </label>
+            </div>
+            
+            <input type="submit" value="send to bot">
+          </form>
+      </div>
+   </div>
+
+  <div class= 'rigth'>
+      <!-- Contenedor 1 -->
+    <div class="image-container" onclick="view()">
+      <script>
+        function view(){
+          window.location.href= "{{ url_for('/view') }}";
+        }
+      </script>
+        <h2 id="i0"id="i0">{{ home[0]["title"]}}</h2>
+        <img src="/css/images/the_machinist_poster.jpg" alt="Imagen 1">
+        <h3>{{ home[0]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i1">{{ home[1]["title"]}}</h2>
+        <img src="/css/images/house_of_cards.jpg" alt="Imagen 1">
+        <h3>{{ home[1]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i2">{{ home[2]["title"]}}</h2>
+        <img src="/css/images/re_in_dkss.jpg" alt="Imagen 1">
+        <h3>{{ home[2]["release_year"]  }}</h3>
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i3">{{ home[3]["title"]}}</h2>
+        <img src="/css/images/la_casa_papel.jpg" alt="Imagen 1">
+        <h3>{{ home[3]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i4">{{ home[4]["title"]}}</h2>
+        <img src="/css/images/poseidon.jpg" alt="Imagen 1">
+        <h3>{{ home[4]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i5">{{ home[5]["title"]}}</h2>
+        <img src="/css/images/once_upon_a_time_in_mumbaai.jpg" alt="Imagen 1">
+        <h3>{{ home[5]["release_year"]  }}</h3>
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i6">{{ home[6]["title"]}}</h2>
+        <img src="/css/images/mars_attacks.jpg" alt="Imagen 1">
+        <h3>{{ home[6]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i7">{{ home[7]["title"]}}</h2>
+        <img src="/css/images/space_cowboys.jpg" alt="Imagen 1">
+        <h3>{{ home[7]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i8">{{ home[8]["title"].capitalize() }}</h2>
+        <img src="/css/images/beastars.jpg" alt="Imagen 1">
+        <h3>{{ home[8]["release_year"]  }}</h3>
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i9">{{ home[9]["title"]}}</h2>
+        <img src="/css/images/jaws.jpg" alt="Imagen 1">
+        <h3>{{ home[9]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i10">{{ home[10]["title"]}}</h2>
+        <img src="/css/images/sex_education.jpg" alt="Imagen 1">
+        <h3>{{ home[10]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i11">{{ home[11]["title"]}}</h2>
+        <img src="/css/images/the-movies-that-made-us.jpg" alt="Imagen 1">
+        <h3>{{ home[11]["release_year"]  }}</h3>
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i12">{{ home[12]["title"]}}</h2>
+        <img src="/css/images/dear_people.jpg" alt="Imagen 1">
+        <h3>{{ home[12]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i13">{{ home[13]["title"]}}</h2>
+        <img src="/css/images/angry_birds.jpg" alt="Imagen 1">
+        <h3>{{ home[13]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i14">{{ home[14]["title"]}}</h2>
+        <img src="/css/images/dark_skies.jpg" alt="Imagen 1">
+        <h3>{{ home[14]["release_year"]  }}</h3>
+      </div>
+       <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i15">{{ home[15]["title"]}}</h2>
+        <img src="/css/images/The-Prom.jpeg" alt="Imagen 1">
+        <h3>{{ home[15]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i16">{{ home[16]["title"]}}</h2>
+        <img src="/css/images/school_rock.jpg" alt="Imagen 1">
+        <h3>{{ home[16]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i17">{{ home[17]["title"]}}</h2>
+        <img src="/css/images/mary_magdalene.jpg" alt="Imagen 1">
+        <h3>{{ home[17]["release_year"]  }}</h3>
+      </div>
+       <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i18">{{ home[18]["title"]}}</h2>
+        <img src="/css/images/shikara.jpg" alt="Imagen 1">
+        <h3>{{ home[18]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i19">{{ home[19]["title"]}}</h2>
+        <img src="/css/images/nail_it.jpg" alt="Imagen 1">
+        <h3>{{ home[19]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i20">{{ home[20]["title"]}}</h2>
+        <img src="/css/images/sparring.jpg" alt="Imagen 1">
+        <h3>{{ home[20]["release_year"]  }}</h3>
+      </div>
+       <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2 id="i21">{{ home[21]["title"]}}</h2>
+        <img src="/css/images/7_sins.jpg" alt="Imagen 1">
+        <h3>{{ home[21]["release_year"]  }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2 id="i22">{{ home[22]["title"]}}</h2>
+        <img src="/css/images/naruto.jpg" alt="Imagen 1">
+        <h3>{{ home[22]["release_year"]  }}</h3>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2 id="i23">{{ home[23]["title"]}}</h2>
+        <img src="/css/images/marshall.jpg" alt="Imagen 1">
+        <h3>{{ home[23]["release_year"]  }}</h3>
+      </div>
+  </div>
+  
+</body>
+</html>
+
+</html>

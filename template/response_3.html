@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="/css/style_response.css" />
+  </head>
+
+ <body>
+   <div class='left' >
+      <div class="form-container">
+          <h1 >
+            You can chat with chatbot!
+          </h1>
+          <form action='/chat' method="post">
+            <input type="text" name="texto" placeholder="i want a love movie...">
+            <div  class="input-like"  readonly> <label for="input-like" >bot: category selected -> {{ categoria }}</label>
+            </div>
+            
+            <input type="submit" value="send to bot">
+          </form>
+      </div>
+   </div>
+
+  <div class= 'rigth'>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src='{{ imagen_url }}' alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+      <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+       <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+       <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+       <!-- Contenedor 1 -->
+    <div class="image-container">
+        <h2>{{ movie1[0][0] }}</h2>
+        <img src="/css/images/alien_poster.jpg" alt="Imagen 1">
+        <h3>{{ movie1[0][2] }}</h3>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div class="image-container">
+        <h2>{{ movie1[1][0] }}</h2>
+        <img src="/css/images/thefly_poster.jpg" alt="Imagen 2">
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div class="image-container">
+        <h2>{{ movie1[2][0] }}</h2>
+        <img src="/css/images/thething_poster.jpg" alt="Imagen 3">
+      </div>
+  </div>
+  
+</body>
+</html>
+
+</html>
