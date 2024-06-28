@@ -50,9 +50,11 @@ body {
    bottom: 0; /* Ajusta la posición inferior según sea necesario */
    width: calc(100% - 220px); /* Calcula el ancho restante */
    overflow-y: auto; /* Añade scroll vertical solo si es necesario */
-   display: flex; /* Utiliza flexbox para distribuir los contenedores */
-   flex-wrap: wrap; /* Permite que los contenedores se ajusten en múltiples líneas */
-   gap: 20px; /* Espacio entre los contenedores */
+   display: grid; /* Utiliza flexbox para distribuir los contenedores */
+   grid-template-columns: repeat(3,1fr); /* Permite que los contenedores se ajusten en múltiples líneas */
+   gap: 0; /* Espacio entre los contenedores */
+   justify-content: center;
+   place-items: center;
 
  }
  
@@ -60,17 +62,19 @@ body {
  background-color: #111111; /* Color de fondo para cada contenedor de imagen */
  padding: 15px;
  margin: 15px;
- width: 100px; /* Ancho del contenedor, ajusta según necesites */
+ width: auto; /* Ancho del contenedor, ajusta según necesites */
  height: 200px;
  text-align: center;
  border-radius: 8px;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
- justify-content: center;
+ 
+ cursor: pointer;
 }
 .image-container img {
-    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    /* max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
     height: 150px; /* Altura automática */
     border-radius: 8px;
+    width: 100px;
   }
 .image-container h2 {
     color: white;

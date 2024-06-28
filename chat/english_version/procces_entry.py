@@ -1,7 +1,7 @@
 from .load_objects import vectorizer, modelo_prediction, encoder, df #note if you want to run this script mainly please delete dot rigth before .load_objects, then put it back for running web 
 #[['title','type','cast','genres_reduction','description']]
 import re
-print(df.columns)
+
 def get_prediction(text):
     matrix = vectorizer.transform([text]).toarray()
     prediction = modelo_prediction.predict(matrix.reshape(1,-1))
@@ -14,27 +14,27 @@ def get_prediction(text):
 def show_random_movies(category):
     if category in ['old']:
         if category == 'old':
-            random_movies = df[df[category] == 1].sample(n=3)
-            return random_movies[['title','genres_reduction']]
+            random_movies = df[df[category] == 1].sample(n=9)
+            return random_movies
         else:
-            random_movies = df[df[category] == 0].sample(n=3)
-            return random_movies[['title','genres_reduction']]
+            random_movies = df[df[category] == 0].sample(n=9)
+            return random_movies
 
     elif category in ['short','long']:
         if category == 'short':
-            random_movies = df[df[category] == 1].sample(n=3)
-            return random_movies[['title','genres_reduction']]
+            random_movies = df[df[category] == 1].sample(n=9)
+            return random_movies
         else:
-            random_movies = df[df[category] == 0].sample(n=3)
-            return random_movies[['title','genres_reduction']]
+            random_movies = df[df[category] == 0].sample(n=9)
+            return random_movies
 
     elif category in ['local','foregin']:
         if category == 'foregin':
-            random_movies = df[df[category] == 1].sample(n=3)
-            return random_movies[['title','genres_reduction']]
+            random_movies = df[df[category] == 1].sample(n=9)
+            return random_movies
         else:
-            random_movies = df[df[category] == 0].sample(n=3)
-            return random_movies[['title','genres_reduction']]
+            random_movies = df[df[category] == 0].sample(n=9)
+            return random_movies
 
     elif category in  ['action',
        'anime', 'classic', 'comedy', 'documental', 'drama', 'family',
@@ -45,8 +45,8 @@ def show_random_movies(category):
        'fantasy', 'foregin', 'lgbt', 'music', 'religion', 'romance', 'show',
        'sports', 'suspense', 'short', 'movie']:
             if category == name:
-                random_movies = df[df[category] == 1].sample(n=3)
-        return random_movies[['title','genres_reduction','release_year','description']].iloc[0,:], random_movies[['title','genres_reduction','release_year','description']].iloc[1,:],random_movies[['title','genres_reduction','release_year','description']].iloc[2,:],
+                random_movies = df[df[category] == 1].sample(n=9)
+        return random_movies
     else:
         print('sorry category not avaliable')
 

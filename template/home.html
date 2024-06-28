@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello, World!</title>
+    <title>Home</title>
     <link rel="stylesheet" href="/css/style_response.css" />
   </head>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <body>
    <div class='left' >
       <div class="form-container">
@@ -23,35 +23,80 @@
 
   <div class= 'rigth'>
       <!-- Contenedor 1 -->
-    <div class="image-container" onclick="view()">
-      <script>
-        function view(){
-          window.location.href= "{{ url_for('/view') }}";
-        }
-      </script>
-        <h2 id="i0"id="i0">{{ home[0]["title"]}}</h2>
+    <div class="image-container" id="i0">
+        <h2 id="i0">{{ home[0]["title"]}}</h2>
         <img src="/css/images/the_machinist_poster.jpg" alt="Imagen 1">
         <h3>{{ home[0]["release_year"]  }}</h3>
     </div>
   
       <!-- Contenedor 2 -->
-      <div class="image-container">
-        <h2 id="i1">{{ home[1]["title"]}}</h2>
+      <div class="image-container" id="i1">
+        <h2>{{ home[1]["title"]}}</h2>
         <img src="/css/images/house_of_cards.jpg" alt="Imagen 1">
         <h3>{{ home[1]["release_year"]  }}</h3>
+       
       </div>
   
       <!-- Contenedor 3 -->
-      <div class="image-container">
-        <h2 id="i2">{{ home[2]["title"]}}</h2>
+      <div id="i2" data-info='{{ home[2]["title"] }}'  class="image-container" >
+        <h2>{{ home[2]["title"]}}</h2>
         <img src="/css/images/re_in_dkss.jpg" alt="Imagen 1">
         <h3>{{ home[2]["release_year"]  }}</h3>
+
+        <form id="form" action="/view" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i2');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+    
+      
       </div>
       <!-- Contenedor 1 -->
-    <div class="image-container">
-        <h2 id="i3">{{ home[3]["title"]}}</h2>
+    <div id="i3" class="image-container" data-info="{{ home[3]['title']  }}">
+        <h2 >{{ home[3]["title"]}}</h2>
         <img src="/css/images/la_casa_papel.jpg" alt="Imagen 1">
         <h3>{{ home[3]["release_year"]  }}</h3>
+        <form id="form" action="/view" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i3');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
     </div>
   
       <!-- Contenedor 2 -->

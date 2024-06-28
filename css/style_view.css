@@ -1,0 +1,69 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 100%;
+    padding: 0;
+    gap: 0px;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 500px;
+}
+.poster{
+    position: relative;
+    
+    background-color: blueviolet;
+    
+}
+.poster img{
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    
+}
+.info{
+    position: relative;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.rmovies{
+    position: relative;
+    background-color: brown;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    pad: 5px;
+}
+.rmovies .image-container{
+    background-color: #111111; /* Color de fondo para cada contenedor de imagen */
+ padding: 5px;
+ margin: 15px;
+ width: 100px; /* Ancho del contenedor, ajusta según necesites */
+ height: 200px;
+ text-align: center;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+ justify-content: center;
+ cursor: pointer;
+}
+.rmovies .image-container img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: 150px; /* Altura automática */
+    border-radius: 8px;
+  }
+
+ .rmovies .image-container h2 {
+    color: white;
+    font-size:x-small;
+    
+}
+
+.rmovies .image-container h3 {
+    color: white;
+    font-size:x-small;
+    position: relative;
+}
