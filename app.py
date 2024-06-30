@@ -3,6 +3,7 @@ from chat.english_version import procces_entry
 import json
 import re
 from recomendation import get_recomendation
+from download_images import get_images
 app = Flask(__name__, template_folder='./template',static_folder='./css',)
 with open('./data/moives_home.json') as file:
         home=json.load(file)
@@ -19,10 +20,10 @@ def get_text():
 
     texto = request.form.get('texto','')
     category,recomend_df = get_bot_response()
+    images=get_images(recomend_df)
     respuesta = {'categoria': category,
                 'movies':recomend_df,
-                'imagen_url':"/css/images/alien_poster.jpg"
-            }
+                'image':images            }
     return render_template('response_3.html', **respuesta)
 
 

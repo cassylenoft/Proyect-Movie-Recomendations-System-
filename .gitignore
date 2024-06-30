@@ -9,6 +9,7 @@ similarity.pkl
 *.pkl
 *.h5
 *.xlsx
+*.jpg
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,linux,macos,visualstudiocode,windows
