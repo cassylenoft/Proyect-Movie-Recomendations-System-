@@ -1,3 +1,43 @@
+.navbar{
+    background-color:#3f3e3d;
+    z-index: 10;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+  
+   }
+  .nav-list{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    white-space: 0;
+    gap: 0px;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 0;
+   }
+   .navbar .nav-list .li {
+    height: 10px;
+    font-size: x-small;
+    text-align: center;
+    bottom: 40px;
+  }
+  
+  .nav-list li a {
+    display: block;
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 14px 20px; /* Espaciado interno de los enlaces */
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+    width: auto;
+  }
+
 .container {
     display: grid;
     grid-template-columns: 2fr 3fr;
