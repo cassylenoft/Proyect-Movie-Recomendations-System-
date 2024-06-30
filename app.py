@@ -1,7 +1,8 @@
 from flask import (Flask, request, render_template, make_response, redirect, jsonify)
 from chat.english_version import procces_entry
 import json
-
+import re
+from recomendation import get_recomendation
 app = Flask(__name__, template_folder='./template',static_folder='./css',)
 with open('./data/moives_home.json') as file:
         home=json.load(file)
@@ -28,18 +29,23 @@ def get_text():
 
 @app.route('/view',methods=['GET','POST'])
 def view():
-
+    df1= procces_entry.df
     dicc = {}
-    info = request.form.get('info')
-    for i in home:
+    title = request.form.get('info')
+    title = df1[df1['title'] == title]
+    
+    for name in ['title','director','release_year','genres_reduction','cast','description']:    
+        texto = str(title[name].values)
+        texto_sin = no_corcher(texto)
+        dicc[name] = texto_sin
 
-        if i['title'] == info:
-            for name in ['title','director','release_year','genres_reduction','cast','posters','description']:
-                 value = i[name]
-                 dicc[name] = value
-
-
-    return render_template('view_template.html',info=info,dicc=dicc)
+    dicc2={}
+    similars = get_recomendation(title=dicc['title'],show_count=3)
+    dicc2 ={'r1': no_corcher(similars[0]['title']),
+         'r2': no_corcher(similars[1]['title']),
+         'r3': no_corcher(similars[2]['title'])                                   
+    }
+    return render_template('view_template.html',dicc=dicc,dicc2=dicc2)
 
 @app.route('/view/recommend',methods=['GET','POST'])
 def recommend():
@@ -47,27 +53,35 @@ def recommend():
     dicc = {}
     title = request.form.get('info')
     title = df1[df1['title'] == title]
-    print(title)
+   
     for name in ['title','director','release_year','genres_reduction','cast','description']:
-         texto = str(title[name].values)
-         texto_sin = quitar_caracteres_especiales(texto)
-         dicc[name] = texto_sin
+        texto = str(title[name].values)
+        texto_sin = no_corcher(texto)
+        dicc[name] = texto_sin
+    dicc2={}
+    similars = get_recomendation(title=dicc['title'],show_count=3)
+    dicc2 ={'r1': no_corcher(similars[0]['title']),
+         'r2': no_corcher(similars[1]['title']),
+         'r3': no_corcher(similars[2]['title'])                                   
+    }
+
     
-    # title = df1[df1['title'] == title]
-    # print(f' este el title {title}')
+    
+    
+
+    return render_template('view_recommend.html',dicc=dicc,dicc2=dicc2)
 
 
-    return render_template('view_recommend.html',dicc=dicc)
-
-
-def quitar_caracteres_especiales(texto):
-    caracteres_a_eliminar = ['[', ']', "'", '"']
+def no_corcher(texto):
+    caracteres_a_eliminar = ['[', ']','"',"'"]
     
     # Itera sobre cada caracter a eliminar y reemplázalo con una cadena vacía
     for caracter in caracteres_a_eliminar:
         texto = texto.replace(caracter, '')
     
     return texto
+# def no_corcher(texto):
+#     return re.sub(r'\[.*?\]', '', texto)
 
 
 

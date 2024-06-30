@@ -37,6 +37,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     pad: 5px;
+    justify-content: center;
+
 }
 .rmovies .image-container{
     background-color: #111111; /* Color de fondo para cada contenedor de imagen */
@@ -55,6 +57,11 @@
     height: 150px; /* Altura automática */
     border-radius: 8px;
   }
+.rmovies h1{
+    font-size: 15px;
+    position: absolute;
+    bottom: 270px;
+}
 
  .rmovies .image-container h2 {
     color: white;

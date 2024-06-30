@@ -8,6 +8,46 @@ body {
    flex-direction: column; /* Organiza los elementos en columna */
    justify-content: space-between; /* Ajusta el espacio entre los elementos */
  }
+ .navbar{
+  background-color:#3f3e3d;
+  z-index: 10;
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+
+ }
+.nav-list{
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  white-space: 0;
+  gap: 0px;
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  font-size: 0;
+ }
+ .navbar .nav-list .li {
+  height: 10px;
+  font-size: x-small;
+  text-align: center;
+  bottom: 40px;
+}
+
+.nav-list li a {
+  display: block;
+  color: white; /* Color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  padding: 14px 20px; /* Espaciado interno de los enlaces */
+}
+
+.nav-list li a:hover {
+  background-color: #555; /* Color de fondo al pasar el mouse */
+  width: auto;
+}
+
  
  .title {
    color: #5C6AC4;
@@ -27,6 +67,7 @@ body {
    background-color: #7e7973;
    width: 220px;
    flex-grow: 1;
+   
  }
  
  .form-container {
@@ -55,6 +96,7 @@ body {
    gap: 0; /* Espacio entre los contenedores */
    justify-content: center;
    place-items: center;
+   margin-top: 40px;
 
  }
  
@@ -62,7 +104,7 @@ body {
  background-color: #111111; /* Color de fondo para cada contenedor de imagen */
  padding: 15px;
  margin: 15px;
- width: auto; /* Ancho del contenedor, ajusta según necesites */
+ width: 100px; /* Ancho del contenedor, ajusta según necesites */
  height: 200px;
  text-align: center;
  border-radius: 8px;
@@ -79,6 +121,7 @@ body {
 .image-container h2 {
     color: white;
     font-size:x-small;
+    overflow: hidden;
     
 }
 

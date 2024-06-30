@@ -12,12 +12,12 @@ def get_prediction(text):
     return category
 
 def show_random_movies(category):
-    if category in ['old']:
+    if category in ['old','recent']:
         if category == 'old':
             random_movies = df[df[category] == 1].sample(n=9)
             return random_movies
         else:
-            random_movies = df[df[category] == 0].sample(n=9)
+            random_movies = df[df['old'] == 0].sample(n=9)
             return random_movies
 
     elif category in ['short','long']:
@@ -25,7 +25,7 @@ def show_random_movies(category):
             random_movies = df[df[category] == 1].sample(n=9)
             return random_movies
         else:
-            random_movies = df[df[category] == 0].sample(n=9)
+            random_movies = df[df['short'] == 0].sample(n=9)
             return random_movies
 
     elif category in ['local','foregin']:
@@ -33,7 +33,7 @@ def show_random_movies(category):
             random_movies = df[df[category] == 1].sample(n=9)
             return random_movies
         else:
-            random_movies = df[df[category] == 0].sample(n=9)
+            random_movies = df[df['foregin'] == 0].sample(n=9)
             return random_movies
 
     elif category in  ['action',
