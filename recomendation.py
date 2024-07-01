@@ -1,9 +1,9 @@
 import pandas as pd
 import pickle
-with open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/df.pkl','rb') as f:
+with open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_df.pkl','rb') as f:
     df = pickle.load(f)
 
-with open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/similarity.pkl','rb') as f:
+with open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_similarity.pkl','rb') as f:
     similarity = pickle.load(f)
 
 def index_from_title(title:str): 
