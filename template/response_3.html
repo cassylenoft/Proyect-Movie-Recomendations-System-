@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movies Recommender</title>
+    <link rel="stylesheet" href="/css/style_response.css" />
+  </head>
+
+ <body>
+  <nav class="navbar" >
+    <ul class="nav-list">
+      <li class="li"><a href="/"> Home </a></li>
+      <li class="li"><a href="/"> Info </a></li>
+      <li class="li"><a href="/"> Contact </a></li>
+    </ul>
+  </nav>
+   <div class='left' >
+      <div class="form-container">
+          <h1 >
+            You can chat with chatbot!
+          </h1>
+          <form action='/chat' method="post">
+            <input required type="text" name="texto" placeholder="i want a love movie...">
+            <div class="input-like"  readonly> <label for="input-like" >bot: category selected -> {{ categoria }}</label>
+            </div>
+            
+            <input type="submit" value="send to bot">
+          </form>
+      </div>
+   </div>
+
+  <div class= 'rigth'>
+      <!-- Contenedor 1 -->
+    <div id= "i0" class="image-container" data-info="{{  movies['title'][0]  }}">
+        <h2>{{ movies['title'][0] }}</h2>
+        <img src='{{ image[0] }}' alt="Imagen 1">
+        <h3>{{ movies['release_year'][0] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i0');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+    </div>
+  
+      <!-- Contenedor 2 -->
+      <div id="i1" data-info="{{ movies['title'][1] }}" class="image-container">
+        <h2>{{ movies['title'][1] }}</h2>
+      <img src="{{image[1]}}" alt="Imagen 2">
+        <h3>{{ movies['release_year'][1] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i1');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+      </div>
+  
+      <!-- Contenedor 3 -->
+      <div id="i2" data-info="{{ movies['title'][2] }}" class="image-container">
+        <h2>{{ movies['title'][2] }}</h2>
+        <img src="{{image[2]}}" alt="Imagen 3">
+        <h3>{{ movies['release_year'][2] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i2');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+      </div>
+      <!-- Contenedor 4 -->
+    <div id="i3" data-info="{{ movies['title'][3] }}" class="image-container">
+        <h2>{{ movies['title'][3] }}</h2>
+        <img src="{{image[3]}}" alt="Imagen 1">
+        <h3>{{ movies['release_year'][3] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i3');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+    </div>
+  
+      <!-- Contenedor 5 -->
+      <div id="i4" data-info="{{ movies['title'][4] }}" class="image-container">
+        <h2>{{ movies['title'][4] }}</h2>
+        <img src="{{image[4]}}" alt="Imagen 2">
+        <h3>{{ movies['release_year'][4] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i4');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+      </div>
+      <!-- Contenedor 6 -->
+      <div id="i5" data-info="{{ movies['title'][5] }}" class="image-container">
+        <h2>{{ movies['title'][5] }}</h2>
+        <img src="{{image[5]}}" alt="Imagen 2">
+        <h3>{{ movies['release_year'][6] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i5');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+      </div>
+      <!-- Contenedor 7 -->
+      <div id="i6" data-info="{{ movies['title'][6] }}" class="image-container">
+        <h2>{{ movies['title'][6] }}</h2>
+        <img src="{{image[6]}}" alt="Imagen 1">
+        <h3>{{ movies['release_year'][6] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i6');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+    </div>
+
+      <!-- Contenedor 8 -->
+      <div id="i7" data-info="{{ movies['title'][7] }}" class="image-container">
+        <h2>{{ movies['title'][7] }}</h2>
+        <img src="{{image[7]}}" alt="Imagen 2">
+        <h3>{{ movies['release_year'][7] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i7');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+      </div>
+      <!-- Contenedor 9 -->
+      <div id="i8" data-info="{{ movies['title'][8] }}" class="image-container">
+        <h2>{{ movies['title'][8] }}</h2>
+        <img src="{{image[8]}}" alt="Imagen 2">
+        <h3>{{ movies['release_year'][8] }}</h3>
+        <form id="form" action="/view/recommend" method="POST" style="display: none;">
+          <input type="hidden" id="info" name="info">
+        </form>
+  
+      <script>
+          // Obtener el div
+          var div = document.getElementById('i8');
+          
+          // Añadir evento de clic al div
+          div.addEventListener('click', function() {
+              // Obtener la información del div
+              var info = this.getAttribute('data-info');
+              
+              // Colocar la información en el input del formulario
+              document.getElementById('info').value = info;
+              
+              // Enviar el formulario
+              document.getElementById('form').submit();
+              
+              // Redirigir a otra página (opcional)
+              
+          });
+      </script>
+      </div>
+        
+    
+  
+      
+  </div>
+  
+</body>
+</html>
+
+</html>

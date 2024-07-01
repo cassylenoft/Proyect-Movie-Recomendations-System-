@@ -1,0 +1,116 @@
+.navbar{
+    background-color:#3f3e3d;
+    z-index: 10;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+  
+   }
+  .nav-list{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    white-space: 0;
+    gap: 0px;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 0;
+   }
+   .navbar .nav-list .li {
+    height: 10px;
+    font-size: x-small;
+    text-align: center;
+    bottom: 40px;
+  }
+  
+  .nav-list li a {
+    display: block;
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 14px 20px; /* Espaciado interno de los enlaces */
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+    width: auto;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 100%;
+    padding: 0;
+    gap: 0px;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 500px;
+}
+.poster{
+    position: relative;
+    
+    background-color: blueviolet;
+    
+}
+.poster img{
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    
+}
+.info{
+    position: relative;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.rmovies{
+    position: relative;
+    background-color: brown;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    pad: 5px;
+    justify-content: center;
+
+}
+.rmovies .image-container{
+    background-color: #111111; /* Color de fondo para cada contenedor de imagen */
+ padding: 5px;
+ margin: 15px;
+ width: 100px; /* Ancho del contenedor, ajusta según necesites */
+ height: 200px;
+ text-align: center;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+ justify-content: center;
+ cursor: pointer;
+}
+.rmovies .image-container img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: 150px; /* Altura automática */
+    border-radius: 8px;
+  }
+.rmovies h1{
+    font-size: 15px;
+    position: absolute;
+    bottom: 270px;
+}
+
+ .rmovies .image-container h2 {
+    color: white;
+    font-size:x-small;
+    
+}
+
+.rmovies .image-container h3 {
+    color: white;
+    font-size:x-small;
+    position: relative;
+}

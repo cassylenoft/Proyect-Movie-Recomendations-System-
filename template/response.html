@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Recommendations</title>
+    <meta name='theme-color' conten='#09f'>
+  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #060404;;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin: 0;
+        }
+        .container {
+            width: 640px;
+            height: 200px;
+            background-color: #484343;
+            
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(70, 69, 69, 0.1);
+            position: relative;
+            margin-top: 0%;
+            bottom: 100px;
+
+            
+            
+        }
+        .container h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 16px;
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+        .container a {
+            color: #4CAF50;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px; /* Espacio superior */
+        }
+        .container a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+        .poster {
+            border: 0px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 30%;
+            background-color: chocolate;
+        }
+        .image-box p{
+            color: #ddd;
+            font-size: 16px;
+            margin-bottom: 10px; /* Espacio inferior */
+            background-color: blueviolet;
+        }
+        .r_box{
+            width: 640px;
+            height: 580px;
+            background-color:darkblue;
+            position: absolute;
+            nav-down: auto;
+            bottom: 200px;
+        }
+        .box{
+            top: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: yellow;">Category selected: {{ categoria }}</h1>
+        <p style="color:aqua">Bot: Please pick a movie if you liked it and i will recommen som other similar!</p>
+        <a href="/">Volver al inicio</a>  
+    </div>
+    <div id="box" clas="'r_box"> 
+        <div class="image-box">
+            <img class="poster" src="../images/alien_poster.jpg" alt="Imagen 1">
+            <p>Titulo: {{ movie1[0][0]}} | generos: {{ movie1[0][1]}}</p>
+            <p>ano: {{ movie1[0][2]}} | descrip: {{ movie1[0][3]}} </p>
+    
+        </div>
+        <div class="image-box">
+            <img class="poster" src="../images/thefly_poster.jpg" alt="Imagen 2">
+            <p>Titulo: {{ movie1[1][0]}}</p>
+            <p>generos: {{ movie1[1][1]}}</p>
+        </div>
+        <div class="image-box">
+            <img class="poster" src="../images/thething_poster.jpg" alt="Imagen 3">
+            <p>Titulo: {{ movie1[2][0]}}</p>
+            <p>generos: {{ movie1[2][1]}}</p>
+        </div>
+    </div>
+    
+</body>
+</html>
