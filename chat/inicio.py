@@ -1,7 +1,3 @@
-# import sys
-# sys.path.append('/home/ackerman/Proyect-Movie-Recomendations-System-/chat/algorithm_chat')
-# sys.path.append('/home/ackerman/Proyect-Movie-Recomendations-System-/chat/modules_data_proccessing')
-
 import sys
 
 if not sys.warnoptions:
@@ -59,32 +55,7 @@ def run():
             #analizar comentario
             #infomar que tipo de recomendaciones puedo dar
             print(Fore.CYAN+Back.BLACK+'bot ->: [claro puedo hacerte recomendaciones por genero o lo que quieras solo comenta que buscas]')
-            # if (predict_rcm == 0) or (rcnn_predict == 0):  
-            #     rcm = 0     
-            #     print('ok aqui te recomiendo peliculas de : critica')
-            # elif (rcnn2_predict == 1) or (rcnn_predict == 1):
-            #     rcm = 1    
-            #     print('ok aqui te recomiendo peliculas de : pop')
-            # elif (rcnn2_predict == 2 ) or (rcnn_predict == 2):
-            #     rcm = 3    
-            #     print('ok aqui te recomiendo peliculas de : recientes')
-            # elif rcm == 3:
-                    
-            #     print('ok aqui te recomeindo peliculas de : culto')
-            # elif (rcnn2_predict == 4) or (rcnn_predict == 4):
-            #     rcm = 5   
-            #     print('ok aqui te recomiendo peliculas de : genero')
-            # elif(rcnn2_predict == 5) or (rcnn_predict == 5):
-            #     rcm = 6   
-            #     print('ok aqui te recomiendo peliculas de : owner')
-            # elif (rcnn2_predict == 6) or (rcnn_predict == 6):
-            #     rcm = 7  
-            
-            # give_predictions_to_response()
-        #print(texto_input)
-            #print(Fore.CYAN+Back.BLACK+'bot ->: [respuesta del bot]')
-        # analize_input()
-        # give_response()
+           
 
 
 if __name__ == "__main__":
@@ -94,5 +65,3 @@ if __name__ == "__main__":
         'predicciones model1' : predicciones_list}
     print(pd.DataFrame(dicc))
 
-# def give_predictions_to_response():
-#     return predictions
