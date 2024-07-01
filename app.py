@@ -4,6 +4,8 @@ import json
 import re
 from recomendation import get_recomendation
 from download_images import get_images
+
+
 app = Flask(__name__, template_folder='./template',static_folder='./css',)
 with open('./data/moives_home.json') as file:
         home=json.load(file)
@@ -81,8 +83,6 @@ def no_corcher(texto):
         texto = texto.replace(caracter, '')
     
     return texto
-# def no_corcher(texto):
-#     return re.sub(r'\[.*?\]', '', texto)
 
 
 
