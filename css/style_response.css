@@ -82,8 +82,10 @@ body {
  }
  .rigth{
    position: absolute;
-   /*background-color: #19274a; */
-   background-image: url('/css/images/gift_project.gif');
+   background: #762f2f;
+background: -webkit-linear-gradient(0deg, #762f2f 0%, #0a0a0a 100%);
+background: linear-gradient(0deg, #762f2f 0%, #0a0a0a 100%);
+   /*background-image: url('/css/images/gift_project.gif'); */
    background-size: cover;
    background-position: center;
    top: 0; /* Ajusta la posición superior según sea necesario */
@@ -108,8 +110,10 @@ body {
  height: 200px;
  text-align: center;
  border-radius: 8px;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
- 
+ border-radius: 15px 0px 0px 0px;
+ -webkit-border-radius: 15px 0px 0px 0px;
+ -moz-border-radius: 15px 0px 0px 0px;
+ border: 20px double #474646;
  cursor: pointer;
 }
 .image-container img {
