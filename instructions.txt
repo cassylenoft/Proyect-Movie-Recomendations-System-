@@ -1,0 +1,6 @@
+
+1. Download or clone git repository
+2. cd Proyect-Movie-Recomendations-System-
+2. conda create --name 'name_your_env'
+3. conda activate 'name_your_env'
+4. 
