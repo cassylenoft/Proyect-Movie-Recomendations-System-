@@ -35,19 +35,30 @@ def view():
     df1= procces_entry.df
     dicc = {}
     title = request.form.get('info')
-    title = df1[df1['title'] == title]
+    df_title = df1[df1['title'] == title]
     
-    for name in ['title','director','release_year','genres_reduction','cast','description']:    
-        texto = str(title[name].values)
+    # for name in ['title','director','release_year','genres_reduction','cast','description']:    
+    #     texto = str(title[name].values)
+    #     texto_sin = no_corcher(texto)
+    #     dicc[name] = texto_sin
+    for name in ['title','director','release_year','genres_reduction','cast','description']:
+        texto = str(df_title[name].values)
         texto_sin = no_corcher(texto)
         dicc[name] = texto_sin
-
+    dicc['image'] = no_corcher(str(get_images(df=df_title)))
+    
+    
     dicc2={}
     similars = get_recomendation(title=dicc['title'],show_count=3)
     dicc2 ={'r1': no_corcher(similars[0]['title']),
          'r2': no_corcher(similars[1]['title']),
          'r3': no_corcher(similars[2]['title'])                                   
     }
+    
+    dicc2['img1'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[0]['title'])])))
+    dicc2['img2'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[1]['title'])])))
+    dicc2['img3'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[2]['title'])])))
+
     return render_template('view_template.html',dicc=dicc,dicc2=dicc2)
 
 @app.route('/view/recommend',methods=['GET','POST'])
@@ -55,18 +66,27 @@ def recommend():
     df1= procces_entry.df
     dicc = {}
     title = request.form.get('info')
-    title = df1[df1['title'] == title]
-   
+    df_title = df1[df1['title'] == title]
+    
+    # for name in ['title','director','release_year','genres_reduction','cast','description']:    
+    #     texto = str(title[name].values)
+    #     texto_sin = no_corcher(texto)
+    #     dicc[name] = texto_sin
     for name in ['title','director','release_year','genres_reduction','cast','description']:
-        texto = str(title[name].values)
+        texto = str(df_title[name].values)
         texto_sin = no_corcher(texto)
         dicc[name] = texto_sin
+
+    dicc['image'] = no_corcher(str(get_images(df=df_title)))
     dicc2={}
     similars = get_recomendation(title=dicc['title'],show_count=3)
     dicc2 ={'r1': no_corcher(similars[0]['title']),
          'r2': no_corcher(similars[1]['title']),
          'r3': no_corcher(similars[2]['title'])                                   
     }
+    dicc2['img1'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[0]['title'])])))
+    dicc2['img2'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[1]['title'])])))
+    dicc2['img3'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[2]['title'])])))
 
     
     

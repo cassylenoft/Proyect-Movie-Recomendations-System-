@@ -19,7 +19,7 @@
       </nav>
     <div class="container">
         <div class="poster">
-            <img  src="{{ dicc['posters'] }}" >
+            <img  src="{{ dicc['image'] }}" >
         </div>
         <div class="info">
             <h2> Titulo: {{ dicc['title'] }} </h2>
@@ -35,7 +35,7 @@
         <h1 class="header">If you like {{dicc['title']}} you may like:</h1>
             <div id="i0" data-info="{{ dicc2['r1'] }}" class="image-container">
                 <h2> {{ dicc2['r1'] }}</h2>
-                <img src="/css/images/mars_attacks.jpg" alt="Imagen 1">
+                <img src="{{ dicc2['img1'] }}" alt="Imagen 1">
                 <h3> year </h3>
                 <form id="form" action="/view/recommend" method="POST" style="display: none;">
                     <input type="hidden" id="info" name="info">
@@ -63,7 +63,7 @@
             </div>
             <div id="i1" data-info="{{ dicc2['r2'] }}" class="image-container">
                 <h2 > {{ dicc2['r2'] }} </h2>
-                <img src="/css/images/mars_attacks.jpg" alt="Imagen 1">
+                <img src="{{ dicc2['img2'] }}" alt="Imagen 1">
                 <h3> year </h3>
                 <form id="form" action="/view/recommend" method="POST" style="display: none;">
                     <input type="hidden" id="info" name="info">
@@ -91,7 +91,7 @@
             </div>
             <div id="i2" data-info="{{ dicc2['r3'] }}" class="image-container">
                 <h2 > {{ dicc2['r3'] }}</h2>
-                <img src="/css/images/mars_attacks.jpg" alt="Imagen 1">
+                <img src="{{ dicc2['img3'] }}" alt="Imagen 1">
                 <h3> year </h3>
                 <form id="form" action="/view/recommend" method="POST" style="display: none;">
                     <input type="hidden" id="info" name="info">
