@@ -1,11 +1,11 @@
 import pandas as pd
-import pickle
-with open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_df.pkl','rb') as f:
+import pickle, gzip
+with gzip.open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_df.pkl','rb') as f:
     df = pickle.load(f)
-
-with open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_similarity.pkl','rb') as f:
-    similarity = pickle.load(f)
-
+# df = pickle.load(open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_df.pkl','rb'))
+with gzip.open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_similarity.pkl','rb') as f:
+    symilarity = pickle.load(f)
+#symilarity = pickle.load(open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_similarity.pkl','rb'))
 def index_from_title(title:str): 
     return df[df['title'] == title].index[0]
 
@@ -17,7 +17,7 @@ def title_from_index(list_movies_indexes:list):
 
 def get_recomendation(title:str, show_count:int):
     index = index_from_title(title)
-    idx_similarity = sorted(list(enumerate(similarity[index])),reverse=True,key=lambda idx:idx[1])[1:show_count+1] #gets major similarity for a title and its idx in dataframe
+    idx_similarity = sorted(list(enumerate(symilarity[index])),reverse=True,key=lambda idx:idx[1])[1:show_count+1] #gets major similarity for a title and its idx in dataframe
     movies_indexes = [elem[0] for elem in idx_similarity]
     df = title_from_index(movies_indexes)
     return df
