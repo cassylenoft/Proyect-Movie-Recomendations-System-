@@ -26,6 +26,8 @@ def get_text():
     respuesta = {'categoria': category,
                 'movies':recomend_df,
                 'image':images            }
+    
+    print(f'las rutas son: {images}')
     return render_template('response_3.html', **respuesta)
 
 
@@ -46,18 +48,22 @@ def view():
         texto_sin = no_corcher(texto)
         dicc[name] = texto_sin
     dicc['image'] = no_corcher(str(get_images(df=df_title)))
-    
+    print(f'las rutas son: {dicc['image']}')
     
     dicc2={}
     similars = get_recomendation(title=dicc['title'],show_count=3)
     dicc2 ={'r1': no_corcher(similars[0]['title']),
          'r2': no_corcher(similars[1]['title']),
-         'r3': no_corcher(similars[2]['title'])                                   
+         'r3': no_corcher(similars[2]['title']),
+         'y1':similars[0]['release_year'],
+         'y2':similars[1]['release_year'],
+         'y3':similars[2]['release_year']                                    
     }
     
     dicc2['img1'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[0]['title'])])))
     dicc2['img2'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[1]['title'])])))
     dicc2['img3'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[2]['title'])])))
+    print(f'las rutas son: {dicc2['img1'],dicc2['img2'],dicc2['img3']}')
 
     return render_template('view_template.html',dicc=dicc,dicc2=dicc2)
 
@@ -78,15 +84,20 @@ def recommend():
         dicc[name] = texto_sin
 
     dicc['image'] = no_corcher(str(get_images(df=df_title)))
+    print(f'las rutas son: {dicc['image']}')
     dicc2={}
     similars = get_recomendation(title=dicc['title'],show_count=3)
     dicc2 ={'r1': no_corcher(similars[0]['title']),
          'r2': no_corcher(similars[1]['title']),
-         'r3': no_corcher(similars[2]['title'])                                   
+         'r3': no_corcher(similars[2]['title']),
+         'y1':similars[0]['release_year'],
+         'y2':similars[1]['release_year'],
+         'y3':similars[2]['release_year']                                   
     }
     dicc2['img1'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[0]['title'])])))
     dicc2['img2'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[1]['title'])])))
     dicc2['img3'] = no_corcher(str(get_images(df=df1[df1['title'] ==  no_corcher(similars[2]['title'])])))
+    print(f'las rutas son: {dicc2['img1'],dicc2['img2'],dicc2['img3']}')
 
     
     

@@ -12,11 +12,26 @@
 <body>
     <nav class="navbar" >
         <ul class="nav-list">
-          <li class="li"><a href="/"> Home </a></li>
-          <li class="li"><a href="/"> Info </a></li>
-          <li class="li"><a href="/"> Contact </a></li>
+          <li class="li"><a href="/">Home</a></li><li class="li"><a href="#" id="openModal1">Info</a></li><li class="li"><a href="#" id="openModal2">Contact</a></li>
         </ul>
       </nav>
+      <!-- Modales -->
+    <div style="display: none;" id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal1">&times;</span>
+        <h2>GitHub repository</h2>
+        <p> https://github.com/Jossellu/Proyect-Movie-Recomendations-System- </p>
+      </div>
+    </div>
+    
+    <div style="display: none;" id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal2">&times;</span>
+        <h2>Contact Creators</h2>
+        <p>linkedin.com/in/carlos-ángel-mayorga-lópez-7208992b6 </p>
+        <p> linkedin.com/in/josé-luis-lópez-rodriguez-aa9a16181 </p>
+      </div>
+    </div>
     <div class="container">
         <div class="poster">
             <img  src="{{ dicc['image'] }}" >
@@ -37,7 +52,7 @@
             <div id="i0" data-info="{{ dicc2['r1'] }}" class="image-container">
                 <h2> {{dicc2['r1']}}</h2>
                 <img src="{{ dicc2['img1'] }}" alt="Imagen 1">
-                <h3> year </h3>
+                <h3> {{ dicc2['y1'] }} </h3>
                 <form id="form" action="/view/recommend" method="POST" style="display: none;">
                     <input type="hidden" id="info" name="info">
                   </form>
@@ -65,7 +80,7 @@
             <div id="i1" data-info="{{ dicc2['r2'] }}" class="image-container">
                 <h2> {{ dicc2['r2'] }} </h2>
                 <img src="{{ dicc2['img2'] }}" alt="Imagen 1">
-                <h3> year </h3>
+                <h3> {{ dicc2['y2'] }} </h3>
                 <form id="form" action="/view/recommend" method="POST" style="display: none;">
                     <input type="hidden" id="info" name="info">
                   </form>
@@ -93,7 +108,7 @@
             <div id="i2" data-info="{{ dicc2['r3'] }}" class="image-container">
                 <h2> {{ dicc2['r3'] }} </h2>
                 <img src="{{ dicc2['img3'] }}" alt="Imagen 1">
-                <h3> year </h3>
+                <h3> {{ dicc2['y3'] }} </h3>
                 <form id="form" action="/view/recommend" method="POST" style="display: none;">
                     <input type="hidden" id="info" name="info">
                   </form>
@@ -119,6 +134,66 @@
                 </script>
             </div>
     </div>
+    <script>
+        // Obtener el div
+        var div = document.getElementById('i23');
+        
+        // Añadir evento de clic al div
+        div.addEventListener('click', function() {
+            // Obtener la información del div
+            var info = this.getAttribute('data-info');
+            
+            // Colocar la información en el input del formulario
+            document.getElementById('info').value = info;
+            
+            // Enviar el formulario
+            document.getElementById('form').submit();
+            
+            // Redirigir a otra página (opcional)
+            
+        });
+    </script>
+    </div>
+</div>
+<script>
+  // JavaScript para manejar los modales
+  document.addEventListener('DOMContentLoaded', function() {
+    var openModal1 = document.getElementById('openModal1');
+    var openModal2 = document.getElementById('openModal2');
+    var modal1 = document.getElementById('modal1');
+    var modal2 = document.getElementById('modal2');
+    var closeModal1 = document.getElementById('closeModal1');
+    var closeModal2 = document.getElementById('closeModal2');
+  
+    // Función para abrir el modal correspondiente
+    openModal1.addEventListener('click', function() {
+      modal1.style.display = 'block';
+    });
+  
+    openModal2.addEventListener('click', function() {
+      modal2.style.display = 'block';
+    });
+  
+    // Función para cerrar el modal correspondiente
+    closeModal1.addEventListener('click', function() {
+      modal1.style.display = 'none';
+    });
+  
+    closeModal2.addEventListener('click', function() {
+      modal2.style.display = 'none';
+    });
+  
+    // Cerrar el modal haciendo clic fuera del contenido
+    window.addEventListener('click', function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = 'none';
+      }
+      if (event.target == modal2) {
+        modal2.style.display = 'none';
+      }
+    });
+  });
+  </script>
 
 </body>
 

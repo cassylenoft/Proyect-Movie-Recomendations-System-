@@ -52,14 +52,22 @@
 .poster{
     position: relative;
     margin-top: 40px;
-    background-color: blueviolet;
+    background: radial-gradient(#202026 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #202026 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #202026 49% 51%, transparent 51%);
+    background-size: 2em 2em;
+    background-color: #000000;
+    border-radius: 15px 0px 0px 0px;
+ -webkit-border-radius: 15px 0px 0px 0px;
+ -moz-border-radius: 15px 0px 0px 0px;
+ border: 20px double #474646;
+ bottom:7px;
     
 }
 .poster img{
-    width: 100%;
-    height: 500px;
-    border-radius: 8px;
-    
+    width: 200px;
+    height: 400px;
+    padding: 15px;
+    justify-content: center;
+    margin-left: 130px;
 }
 .info{
     position: relative;
@@ -113,6 +121,7 @@
     max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
     height: 150px; /* Altura automática */
     border-radius: 8px;
+    
   }
 .rmovies h1{
     font-size: 15px;
@@ -131,4 +140,39 @@
     color: white;
     font-size:x-small;
     position: relative;
+}
+
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000;
+}
+
+.close-modal:hover {
+  color: #999;
 }
