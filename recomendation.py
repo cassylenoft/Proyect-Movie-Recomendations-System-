@@ -1,11 +1,21 @@
 import pandas as pd
 import pickle, gzip
+
+def get_similarity():
+    data = pd.read_json('recomendation_model/data/proccesed_data/df_to_similarity')
+    from sklearn.feature_extraction.text import CountVectorizer
+    cv = CountVectorizer(max_features=7942 , stop_words='english')
+    vector = cv.fit_transform(data['tags'].values.astype('U'))
+    from sklearn.metrics.pairwise import cosine_similarity
+    similarity  = cosine_similarity(vector)
+    return similarity
+
+symilarity = get_similarity()
+
 with gzip.open('recomendation_model/pickle_objects_saved/comprimed_df.pkl','rb') as f:
     df = pickle.load(f)
-# df = pickle.load(open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_df.pkl','rb'))
-with gzip.open('recomendation_model/pickle_objects_saved/comprimed_similarity.pkl','rb') as f:
-    symilarity = pickle.load(f)
-#symilarity = pickle.load(open('/home/ackerman/Proyect-Movie-Recomendations-System-/recomendation_model/pickle_objects_saved/comprimed_similarity.pkl','rb'))
+
+
 def index_from_title(title:str): 
     return df[df['title'] == title].index[0]
 
@@ -23,7 +33,7 @@ def get_recomendation(title:str, show_count:int):
     return df
 
 
-
-
+a = get_recomendation(title='Ghost Tears',show_count=3)
+print(a[0])
 
 

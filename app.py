@@ -4,18 +4,40 @@ import json
 import re
 from recomendation import get_recomendation
 from download_images import get_images
-
+from base_prediction import chatbot_response
 
 app = Flask(__name__, template_folder='./template',static_folder='./css',)
 with open('./data/moives_home.json') as file:
         home=json.load(file)
 
 
-@app.route('/')
+@app.route('/home',methods=['GET','POST'])
 def hello():
     initial_bot_ms = 'write whatever\nyou want to watch'
 
     return render_template('home.html',initial_bot_ms=initial_bot_ms,home=home)
+
+@app.route('/',methods=['GET','POST'])
+def conversation():
+    return render_template('robot.html')
+
+@app.route('/send_message',methods=['POST'])
+def send_message():
+    data = request.json  # Obtener datos JSON enviados por la solicitud
+    user_message = data['message']  # Acceder al campo 'message' del JSON
+    robot_response, show_button = chatbot_response(user_message)
+    if show_button == True:
+        response = {
+            'message':robot_response,
+            'show_button':True
+        }
+    else: 
+         response = {
+            'message': robot_response,
+            'show_button': False
+        }
+    print(response)
+    return jsonify(response)    
 
 @app.route('/chat',methods=['GET','POST'])
 def get_text():
