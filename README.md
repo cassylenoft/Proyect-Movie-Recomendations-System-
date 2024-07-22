@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1> Titulo de proyecto: Proyect-Movie-Recomendations-System- </h1>
 This is a Data Science Project that includes a movie recomendation model, a chatbot and a web page
 Uses a machine learning movie to recommend a movie from a local database
@@ -60,3 +61,27 @@ La pagina inicial (/) es un chat con el que puedes interactuar pues se trata de 
 la pagina principal (/home) por defecto te muestra películas con su título, imagen y año de salida. Las imágenes en esta pagina son las únicas incluidas en el repositorio, para cualquier otra miniatura son descargadas con el modulo *bing_image_downloader* LINK, se hace uso de este modulo para no tener que descargar manualmente para el proyecto estas imágenes y  aligerar el peso del repositorio.
 Para cada película mostrada en esta página, puedes hacer click en la miniatura para redirigirte a otra pagina (/view) y ver mas información de la peli entre ella titulo, año de salida, géneros, cast, director etc. esta otra pagina también incluye un sistema de recomendación basada en la similitud de sus features, desarrollada con *CosineSimilarity* que calcula el coseno del angulo entre los vectores- 
     </p>
+=======
+# Titulo de proyecto: Proyect-Movie-Recomendations-System-
+This is a Data Science Project that includes a movie recomendation model, a chatbot and a web page
+Uses a machine learning movie to recommend a movie from a local database
+
+<samp>
+  <p>
+    Tecnologias usadas
+  </p>
+</samp>
+
+<samp>
+  <p>
+    Tecnicas
+  </p>
+</samp>
+
+<samp>
+  <p>
+    Demos:
+  </p>
+</smap>
+
+>>>>>>> 53afbeb5f75dbafb60480b1cb60e491a1717d173
