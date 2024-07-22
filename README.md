@@ -1,11 +1,12 @@
 <h1> Titulo de proyecto: Proyect-Movie-Recomendations-System- </h1>
 This is a Data Science Project that includes a movie recomendation model, a chatbot and a web page
-Uses a machine learning movie to recommend a movie from a local database
+Uses a machine learning movie to recommend a movie from a local database <br> <br> 
+Este proyecto incluye una web realizada con Flask, chatbot y un sistema de recomendación, en ella que puedes explorar información de películas. la información de las películas pertenece a un <a href="https://www.kaggle.com/datasets/shivamb/netflix-shows">dataset</a> con mas de 7000 títulos.
 <br></br>
 
 <samp>
   <h2>
-    Tecnologias usadas
+    Tecnologías usadas
   </h2>
 </samp>
 
@@ -17,39 +18,44 @@ Uses a machine learning movie to recommend a movie from a local database
 
 <samp>
   <h2>
-    Tecnicas
+    Técnicas
   </h2>
 </samp>
 <h4> Ciencia de datos </h4> 
     
-<a href="Proyect-Movie-Recomendations-System-/recomendation_model/notebooks/EDA_1.ipynb">
-Análisis exploratorio de datos </a>    
-<a href="Proyect-Movie-Recomendations-System-/recomendation_model/notebooks/EDA_1.ipynb">
-Procesamiento de datos </a>    
-<a href="Proyect-Movie-Recomendations-System-/recomendation_model/notebooks/EDA_1.ipynb">
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/recomendation_model/notebooks/EDA_1.ipynb">
+Análisis exploratorio de datos </a> <br>   
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/recomendation_model/notebooks/proccesing_data_2.ipynb">
+Procesamiento de datos </a> <br>    
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/recomendation_model/notebooks/generating_recom_sys_3.ipynb">
 Sistema de recomendación de películas </a>    
    
 
 <h4> Machine Learning </h4>
 
-<h4> Desarrollo Web </h4>
- 
-    
-    
-    
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/Model1.ipynb">
+Clasificación de texto (chatbot) </a> <br>  
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/creating_statmens_for_model.ipynb">
+Clasificación de texto (géneros de películas) </a> 
 
- 
+<h4> Desarrollo Web </h4>
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/creating_statmens_for_model.ipynb">
+Backend </a> <br>
+ <a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/Model1.ipynb">
+Descargador de imágenes para los posters</a> <br>  
+
 
 <samp>
   <h2>
     Demos
   </h2>
 </samp>
-    <p> CONDA
-FLASK 
-sklearn
-Python </p>
+<img source="Proyect-Movie-Recomendations-System-/demos/gift-chat.gif"> </img>
 
+![Chat-demo](/Proyect-Movie-Recomendations-System-/demos/gift-chat.gif) <br>
+![Home-demo](/Proyect-Movie-Recomendations-System-/demos/gift-demo-home.gif) <br>
+![View-demo](/Proyect-Movie-Recomendations-System-/demos/gift-demo-view.gif) <br>
+![Credits-demo](Proyect-Movie-Recomendations-System-/demos/gift-credits.gif)
 <samp>
   <h2>
     Detalles de proyecto
