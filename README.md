@@ -39,9 +39,9 @@ Clasificación de texto (chatbot) </a> <br>
 Clasificación de texto (géneros de películas) </a> 
 
 <h4> Desarrollo Web </h4>
-<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/creating_statmens_for_model.ipynb">
+<a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/app.py">
 Backend </a> <br>
- <a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/Model1.ipynb">
+ <a href="https://pypi.org/project/bing-image-downloader/">
 Descargador de imágenes para los posters</a>  
 
   <h2>
