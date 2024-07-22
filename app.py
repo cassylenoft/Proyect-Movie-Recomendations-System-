@@ -36,7 +36,6 @@ def send_message():
             'message': robot_response,
             'show_button': False
         }
-    print(response)
     return jsonify(response)    
 
 @app.route('/chat',methods=['GET','POST'])

@@ -74,9 +74,9 @@ chatbot_responses = {
     "Hope you have a wonderful time!"
 ],
     'info_messages':
-    ['mys functiosn are','here my funcs'],
+    ["Sure ok recommend you some to watch just type i want to watch something or some' like that","for going to watch movies type if you'd like some' to watch"],
     'recomendation_trigger':
-    ['sure here you go button','clicl the botton below!']
+    ['sure here you go the button','click the botton below!']
 }
 
 
