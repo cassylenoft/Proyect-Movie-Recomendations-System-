@@ -52,10 +52,10 @@ Descargador de imágenes para los posters</a> <br>
 </samp>
 <img source="Proyect-Movie-Recomendations-System-/demos/gift-chat.gif"> </img>
 
-![Chat-demo](/Proyect-Movie-Recomendations-System-/demos/gift-chat.gif) <br>
-![Home-demo](/Proyect-Movie-Recomendations-System-/demos/gift-demo-home.gif) <br>
-![View-demo](/Proyect-Movie-Recomendations-System-/demos/gift-demo-view.gif) <br>
-![Credits-demo](Proyect-Movie-Recomendations-System-/demos/gift-credits.gif)
+![Chat-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-chat.gif?raw=true) <br>
+![Home-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/demos/gift-demo-home.gif) <br>
+![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/demos/gift-demo-view.gif) <br>
+![Credits-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/demos/gift-credits.gif)
 <samp>
   <h2>
     Detalles de proyecto
@@ -65,6 +65,24 @@ Descargador de imágenes para los posters</a> <br>
         
 La pagina inicial (/) es un chat con el que puedes interactuar pues se trata de un modelo de ML de clasificación de texto. este modelo puede identificar palabras usadas para saludar, despedirse, dar las gracias, pedir información o función, pedir ver algo para ver. 
 
-la pagina principal (/home) por defecto te muestra películas con su título, imagen y año de salida. Las imágenes en esta pagina son las únicas incluidas en el repositorio, para cualquier otra miniatura son descargadas con el modulo *bing_image_downloader* LINK, se hace uso de este modulo para no tener que descargar manualmente para el proyecto estas imágenes y  aligerar el peso del repositorio.
-Para cada película mostrada en esta página, puedes hacer click en la miniatura para redirigirte a otra pagina (/view) y ver mas información de la peli entre ella titulo, año de salida, géneros, cast, director etc. esta otra pagina también incluye un sistema de recomendación basada en la similitud de sus features, desarrollada con *CosineSimilarity* que calcula el coseno del angulo entre los vectores- 
+![Chat-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-chat.gif?raw=true) <br>
+
+la pagina principal (/home) por defecto te muestra películas con su título, imagen y año de salida. Las imágenes en esta pagina son las únicas incluidas en el repositorio, para cualquier otra miniatura son descargadas con el modulo <a href="https://pypi.org/project/bing-image-downloader/">*bing_image_downloader*</a>, se hace uso de este modulo para no tener que descargar manualmente para el proyecto estas imágenes y  aligerar el peso del repositorio. <br>
+
+![Home-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/demos/gift-demo-home.gif) <br>
+
+Para cada película mostrada en esta página, puedes hacer click en la miniatura para redirigirte a otra pagina (/view) y ver mas información de la peli entre ella titulo, año de salida, géneros, cast, director etc. esta otra pagina también incluye un sistema de recomendación basada en la similitud de sus features, desarrollada con *CosineSimilarity* que calcula el coseno del angulo entre los vectores.
+
+![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/demos/gift-demo-view.gif) <br>
     </p>
+
+<samp>
+  <h2>
+    Creditos
+  </h2>
+  <p>
+    Colaboradores: 
+  </p>
+  
+   ![Credits-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/demos/gift-credits.gif)
+</samp>
