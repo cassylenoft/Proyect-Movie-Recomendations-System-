@@ -44,22 +44,6 @@ Backend </a> <br>
  <a href="https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/chat/notebooks/Model1.ipynb">
 Descargador de imágenes para los posters</a>  
 
-
-<samp>
-  <h2>
-    Demos
-  </h2>
-</samp>
-<img source="Proyect-Movie-Recomendations-System-/demos/gift-chat.gif"> </img>
-
-![Chat-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-chat.gif?raw=true) <br>
-
-![Home-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-home.gif) <br>
-
-![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-view.gif) <br>
-
-![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-view.gif) <br>
-<samp>
   <h2>
     Detalles de proyecto
   </h2>
@@ -90,3 +74,18 @@ Para cada película mostrada en esta página, puedes hacer click en la miniatura
 
    ![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-view.gif) <br>
 </samp>
+
+<samp>
+  <h2>
+    Demos
+  </h2>
+</samp>
+
+![Chat-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-chat.gif?raw=true) <br>
+
+![Home-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-home.gif) <br>
+
+![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-view.gif) <br>
+
+![View-demo](https://github.com/Jossellu/Proyect-Movie-Recomendations-System-/blob/main/demos/gift-demo-view.gif) <br>
+<samp>
